@@ -4,7 +4,7 @@ El sitio de RIPworx: juegos para computadoras retro, hechos en Asunción, Paragu
 GitHub Pages en <https://ripworx.dev/> (dominio propio, registrado en Porkbun; la dirección
 vieja, `czayas.github.io/ripworx/`, lleva ahí).
 
-Tiene dos juegos para Commodore 64: **Pothole Rush** (versión de prueba 11c, solo PAL) y
+Tiene dos juegos para Commodore 64: **Pothole Rush** (versión de prueba 11d, solo PAL, en disco y en cartucho EasyFlash) y
 **Jumping Jim** (versión 1.1.0, PAL, NTSC y PAL-N; port del juego de roman126 para la ZX
 Spectrum Next, con su permiso).
 
@@ -18,7 +18,7 @@ Spectrum Next, con su permiso).
 | `jumpingjim/index.html` | La página de Jumping Jim. |
 | `jumpingjim/img/` | La ilustración de Carlos para la portada (`portada.webp`, `portada-og.jpg`), los ocho niveles, el título, los récords y el video. El logo arcoíris (`logo.png`) y el cielo del nivel 1 (`fondo.png`) quedan guardados, sin usar por ahora. |
 | `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
-| `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, los manuales, un `LEAME-README.txt` y la licencia CC BY-NC-ND 4.0 en `LICENCIA-LICENSE.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
+| `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, `.crt`, los manuales, un `LEAME-README.txt` y la licencia CC BY-NC-ND 4.0 en `LICENCIA-LICENSE.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
 | `estilo.css` | El estilo común, onda Activision clásica: portada de color con el título en Raleway Black y la ilustración, y recuadros de borde grueso como en el manual de Pothole Rush. Cada página tiene su color: violeta Pothole Rush, verde Jumping Jim (el del borde de su ilustración) y azul marino el inicio. |
 | `ver-sitio.py` | Muestra el sitio en la PC: servidor local y una pestaña del navegador (ver abajo). |
 | `idioma.js` | Español o inglés: el que eligió el visitante; si no eligió, el de su navegador (español si está en español, si no, inglés). Sin JavaScript se ve en inglés. |
@@ -30,14 +30,18 @@ y el CSS muestra solo el elegido.
 
 ## Cómo se actualiza
 
-El zip, las capturas y el video se arman desde el repositorio del juego (`czayas/potholerush`):
+El zip, las capturas y el video se arman desde el repositorio del juego (`czayas/potholerush`), en
+la rama `manual`; `JUEGO` es un árbol de trabajo con la rama del juego (`port-etapa6-c64`), de
+donde salen el `.d64`, el `.prg` y el `.crt`:
 
 ```bash
-tools/sitio/preparar.sh ../ripworx 11c      # la versión va en el nombre del zip
+JUEGO=../pr-11d tools/sitio/preparar.sh ../ripworx 11d   # la versión va en el nombre del zip
 ```
 
 El texto de la página se edita a mano en `potholerush/index.html` (los dos idiomas juntos). Si
-cambia la versión, hay que cambiar también el enlace del zip y el texto que dice la versión.
+cambia la versión, hay que cambiar también el enlace del zip y el texto que dice la versión, y
+borrar el zip anterior: en `descargas/` queda solo la última versión de cada programa (decisión
+de Carlos, 19/10/2026).
 
 Jumping Jim: el zip se copia tal cual de `releases/` del repositorio `czayas/jumpingjim`, y las
 capturas salen de `herramientas/jumpingjim-capturas.py`.
