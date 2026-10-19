@@ -5,6 +5,7 @@
 # en JJ (variable de entorno, por defecto ../jumpingjim), ACME y VICE (x64sc, xvfb-run).
 # Los cuadros elegidos para el sitio: el título, c00300 de nivel1; cada nivel, la captura
 # número 14 (segundo 14); el video, los segundos 8 a 26 del nivel 1, un cuadro de cada dos.
+import os, subprocess, sys
 RAIZ_JJ = os.environ.get('JJ', os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'jumpingjim'))
 sys.path.insert(0, os.path.join(RAIZ_JJ, 'tools'))
 from vice_harness import Vice, load_labels
