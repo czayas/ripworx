@@ -1,7 +1,8 @@
 # RIPworx
 
 El sitio de RIPworx: juegos para computadoras retro, hechos en Asunción, Paraguay. Se publica con
-GitHub Pages en <https://czayas.github.io/ripworx/>.
+GitHub Pages en <https://ripworx.dev/> (dominio propio, registrado en Porkbun; la dirección
+vieja, `czayas.github.io/ripworx/`, lleva ahí).
 
 Tiene dos juegos para Commodore 64: **Pothole Rush** (versión de prueba 11c, solo PAL) y
 **Jumping Jim** (versión 1.1.0, PAL, NTSC y PAL-N; port del juego de roman126 para la ZX
@@ -60,3 +61,11 @@ Linux, macOS y Windows, solo con Python 3.
 Con una cuenta gratuita de GitHub, Pages solo publica desde repositorios públicos. Cuando la
 página esté lista: Settings → General → Change visibility (público) y Settings → Pages → Deploy
 from a branch → `main`, carpeta `/ (root)`.
+
+### El dominio ripworx.dev
+
+Registrado en Porkbun (19/10/2026, por tres años). En el DNS de Porkbun: cuatro registros A para
+`ripworx.dev` (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`), un
+CNAME `www` → `czayas.github.io` y el TXT de verificación de GitHub. En GitHub: el dominio
+verificado en la cuenta, Settings → Pages → Custom domain `ripworx.dev` (el archivo `CNAME` del
+repositorio lo creó GitHub; no hay que borrarlo) y Enforce HTTPS (obligatorio en los .dev).
