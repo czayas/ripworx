@@ -5,7 +5,7 @@ GitHub Pages en <https://ripworx.dev/> (dominio propio, registrado en Porkbun; l
 vieja, `czayas.github.io/ripworx/`, lleva ahí).
 
 Tiene dos juegos para Commodore 64: **Pothole Rush** (versión 1.0, PAL, NTSC y Drean, en disco y en cartucho EasyFlash) y
-**Jumping Jim** (versión 1.1.0, PAL, NTSC y PAL-N; port del juego de roman126 para la ZX
+**Jumping Jim** (versión 1.1.0, PAL, NTSC y Drean; port del juego de roman126 para la ZX
 Spectrum Next, con su permiso).
 
 ## Qué hay
