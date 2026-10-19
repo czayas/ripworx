@@ -154,6 +154,6 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 .volver:hover { opacity: 1; text-decoration: underline; }
 
 /* un recuadro con el texto centrado como bloque (las líneas siguen alineadas a la izquierda) */
-.recuadro.centrado > p { margin-left: auto; margin-right: auto; }
+.recuadro.centrado > :not(h2) { max-width: 38rem; margin-left: auto; margin-right: auto; }
 /* las dos ilustraciones de las tarjetas a la misma altura (la de Jumping Jim es más alta) */
 .juego .tapa-mini img { width: 100%; aspect-ratio: 720 / 460; object-fit: contain; }
