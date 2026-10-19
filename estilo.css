@@ -137,3 +137,20 @@ footer p { margin: 4px auto; max-width: 70ch; opacity: .9; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 .recuadro h3 { color: var(--violeta); font-size: 1.08rem; margin: 18px 0 6px; }
 .juego.pronto { align-self: start; }
+
+/* ---------- Jumping Jim: el cielo del nivel 1, el logo arcoíris y el azul del borde ---------- */
+body.jj { --violeta: #3846c9; --caja: #0a0a1e; }
+.cielo { position: relative; background: #000 url(jumpingjim/img/fondo.png) center top / cover no-repeat;
+         image-rendering: pixelated; color: #fff; text-align: center; padding: 70px 16px 46px; }
+.cielo .logo-jj { width: min(820px, 92%); margin: 0 auto; image-rendering: pixelated; }
+.cielo .subtitulo { color: #b8e8ff; }
+.cielo .boton.lleno { background: #fcff6c; color: #14143a; }
+.cielo .boton.lleno:hover { background: #fff; }
+.arcoiris { height: 8px; margin: 0; border: 0;
+  background: repeating-linear-gradient(90deg, #f28e9e 0 24px, #fcff6c 24px 48px, #8af2c8 48px 72px,
+              #8b8bff 72px 96px, #c56bff 96px 120px); }
+.creditos-jj p { max-width: 70ch; }
+.juego .cielo-mini { background: #000 url(jumpingjim/img/fondo.png) center / cover; image-rendering: pixelated; }
+.juego .logo-mini { width: 86%; margin: 6px auto 14px; image-rendering: pixelated; }
+.juego img { image-rendering: auto; }
+.juego .cielo-mini img { image-rendering: pixelated; }

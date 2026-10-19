@@ -3,7 +3,9 @@
 El sitio de RIPworx: juegos para computadoras retro, hechos en Asunción, Paraguay. Se publica con
 GitHub Pages en <https://czayas.github.io/ripworx/>.
 
-Por ahora tiene un juego: **Pothole Rush** para Commodore 64 (versión de prueba 11c, solo PAL).
+Tiene dos juegos para Commodore 64: **Pothole Rush** (versión de prueba 11c, solo PAL) y
+**Jumping Jim** (versión 1.1.0, PAL, NTSC y PAL-N; port del juego de roman126 para la ZX
+Spectrum Next, con su permiso).
 
 ## Qué hay
 
@@ -12,7 +14,10 @@ Por ahora tiene un juego: **Pothole Rush** para Commodore 64 (versión de prueba
 | `index.html` | El inicio de RIPworx, con la lista de juegos. |
 | `potholerush/index.html` | La página de Pothole Rush. |
 | `potholerush/img/` | Capturas de la C64, el video de una partida, los sprites y la tapa. |
-| `descargas/` | El zip para descargar: `.d64`, `.prg`, los manuales en español y en inglés y un `LEAME-README.txt`. |
+| `jumpingjim/index.html` | La página de Jumping Jim. |
+| `jumpingjim/img/` | El logo del juego, el fondo del nivel 1, los ocho niveles, el título, los récords y el video. |
+| `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
+| `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, los manuales y un `LEAME-README.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
 | `estilo.css` | El estilo común (la estética de la caja y del manual de Pothole Rush). |
 | `idioma.js` | Español o inglés: el que eligió el visitante; si no eligió, el de su navegador (español si está en español, si no, inglés). Sin JavaScript se ve en inglés. |
 | `fuentes/` | Raleway Black y TeX Gyre Adventor en WOFF2 (licencias en `fuentes/LICENCIAS.md` y `OFL-Raleway.txt`). |
@@ -31,6 +36,9 @@ tools/sitio/preparar.sh ../ripworx 11c      # la versión va en el nombre del zi
 
 El texto de la página se edita a mano en `potholerush/index.html` (los dos idiomas juntos). Si
 cambia la versión, hay que cambiar también el enlace del zip y el texto que dice la versión.
+
+Jumping Jim: el zip se copia tal cual de `releases/` del repositorio `czayas/jumpingjim`, y las
+capturas salen de `herramientas/jumpingjim-capturas.py`.
 
 ## Ver la página en la PC antes de publicar
 
