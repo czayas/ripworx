@@ -15,14 +15,14 @@ Spectrum Next, con su permiso).
 | `potholerush/index.html` | La página de Pothole Rush. |
 | `potholerush/img/` | Capturas de la C64, el video de una partida, los sprites y la tapa. |
 | `jumpingjim/index.html` | La página de Jumping Jim. |
-| `jumpingjim/img/` | El logo del juego, el fondo del nivel 1, los ocho niveles, el título, los récords y el video. |
+| `jumpingjim/img/` | La ilustración de Carlos para la portada (`portada.webp`, `portada-og.jpg`), los ocho niveles, el título, los récords y el video. El logo arcoíris (`logo.png`) y el cielo del nivel 1 (`fondo.png`) quedan guardados, sin usar por ahora. |
 | `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
 | `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, los manuales y un `LEAME-README.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
-| `estilo.css` | El estilo común (la estética de la caja y del manual de Pothole Rush). |
+| `estilo.css` | El estilo común, onda Activision clásica: portada de color con el título en Raleway Black y la ilustración, y recuadros de borde grueso como en el manual de Pothole Rush. Cada página tiene su color: violeta Pothole Rush, verde Jumping Jim (el del borde de su ilustración) y azul marino el inicio. |
 | `ver-sitio.py` | Muestra el sitio en la PC: servidor local y una pestaña del navegador (ver abajo). |
 | `idioma.js` | Español o inglés: el que eligió el visitante; si no eligió, el de su navegador (español si está en español, si no, inglés). Sin JavaScript se ve en inglés. |
 | `fuentes/` | Raleway Black y TeX Gyre Adventor en WOFF2 (licencias en `fuentes/LICENCIAS.md` y `OFL-Raleway.txt`). |
-| `img/` | Los logotipos de RIPworx (blanco y violeta), el ícono y la miniatura del inicio. |
+| `img/` | Los logotipos de RIPworx (blanco y violeta), el ícono y las miniaturas de las tarjetas del inicio. |
 
 Los textos están en los dos idiomas en el mismo HTML: cada uno va con `lang="es"` o `lang="en"`
 y el CSS muestra solo el elegido.

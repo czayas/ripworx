@@ -138,19 +138,22 @@ footer p { margin: 4px auto; max-width: 70ch; opacity: .9; }
 .recuadro h3 { color: var(--violeta); font-size: 1.08rem; margin: 18px 0 6px; }
 .juego.pronto { align-self: start; }
 
-/* ---------- Jumping Jim: el cielo del nivel 1, el logo arcoíris y el azul del borde ---------- */
-body.jj { --violeta: #3846c9; --caja: #0a0a1e; }
-.cielo { position: relative; background: #000 url(jumpingjim/img/fondo.png) center top / cover no-repeat;
-         image-rendering: pixelated; color: #fff; text-align: center; padding: 70px 16px 46px; }
-.cielo .logo-jj { width: min(820px, 92%); margin: 0 auto; image-rendering: pixelated; }
-.cielo .subtitulo { color: #b8e8ff; }
-.cielo .boton.lleno { background: #fcff6c; color: #14143a; }
-.cielo .boton.lleno:hover { background: #fff; }
-.arcoiris { height: 8px; margin: 0; border: 0;
-  background: repeating-linear-gradient(90deg, #f28e9e 0 24px, #fcff6c 24px 48px, #8af2c8 48px 72px,
-              #8b8bff 72px 96px, #c56bff 96px 120px); }
-.creditos-jj p { max-width: 70ch; }
-.juego .cielo-mini { background: #000 url(jumpingjim/img/fondo.png) center / cover; image-rendering: pixelated; }
-.juego .logo-mini { width: 86%; margin: 6px auto 14px; image-rendering: pixelated; }
+/* ---------- el color de cada página: violeta Pothole Rush, verde Jumping Jim, azul marino el inicio ---------- */
+body.jj { --caja: #38682c; --violeta: #2f5a24; }   /* el verde del borde de la ilustración */
+body.jj .boton.lleno { background: #f2c94c; }      /* el amarillo de la arena */
+body.jj .boton.lleno:hover { background: #f7d76e; }
+body.jj .zip { background: #eef4ec; }
+body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
+.juego.pr { --caja: #470e52; border-color: #5c1670; }
+.juego.jj { --caja: #38682c; border-color: #2f5a24; }
 .juego img { image-rendering: auto; }
-.juego .cielo-mini img { image-rendering: pixelated; }
+
+/* volver al inicio, arriba a la izquierda (frente al botón de idioma) */
+.volver { position: absolute; top: 18px; left: 18px; z-index: 2; color: #fff; font-weight: bold;
+          font-size: .9rem; text-decoration: none; opacity: .9; }
+.volver:hover { opacity: 1; text-decoration: underline; }
+
+/* un recuadro con el texto centrado como bloque (las líneas siguen alineadas a la izquierda) */
+.recuadro.centrado > p { margin-left: auto; margin-right: auto; }
+/* las dos ilustraciones de las tarjetas a la misma altura (la de Jumping Jim es más alta) */
+.juego .tapa-mini img { width: 100%; aspect-ratio: 720 / 460; object-fit: contain; }
