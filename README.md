@@ -17,7 +17,7 @@ Spectrum Next, con su permiso).
 | `jumpingjim/index.html` | La página de Jumping Jim. |
 | `jumpingjim/img/` | La ilustración de Carlos para la portada (`portada.webp`, `portada-og.jpg`), los ocho niveles, el título, los récords y el video. El logo arcoíris (`logo.png`) y el cielo del nivel 1 (`fondo.png`) quedan guardados, sin usar por ahora. |
 | `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
-| `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, los manuales y un `LEAME-README.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
+| `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, los manuales, un `LEAME-README.txt` y la licencia CC BY-NC-ND 4.0 en `LICENCIA-LICENSE.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
 | `estilo.css` | El estilo común, onda Activision clásica: portada de color con el título en Raleway Black y la ilustración, y recuadros de borde grueso como en el manual de Pothole Rush. Cada página tiene su color: violeta Pothole Rush, verde Jumping Jim (el del borde de su ilustración) y azul marino el inicio. |
 | `ver-sitio.py` | Muestra el sitio en la PC: servidor local y una pestaña del navegador (ver abajo). |
 | `idioma.js` | Español o inglés: el que eligió el visitante; si no eligió, el de su navegador (español si está en español, si no, inglés). Sin JavaScript se ve en inglés. |
