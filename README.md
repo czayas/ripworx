@@ -19,6 +19,7 @@ Spectrum Next, con su permiso).
 | `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
 | `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, los manuales y un `LEAME-README.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
 | `estilo.css` | El estilo común (la estética de la caja y del manual de Pothole Rush). |
+| `ver-sitio.py` | Muestra el sitio en la PC: servidor local y una pestaña del navegador (ver abajo). |
 | `idioma.js` | Español o inglés: el que eligió el visitante; si no eligió, el de su navegador (español si está en español, si no, inglés). Sin JavaScript se ve en inglés. |
 | `fuentes/` | Raleway Black y TeX Gyre Adventor en WOFF2 (licencias en `fuentes/LICENCIAS.md` y `OFL-Raleway.txt`). |
 | `img/` | Los logotipos de RIPworx (blanco y violeta), el ícono y la miniatura del inicio. |
@@ -44,8 +45,15 @@ capturas salen de `herramientas/jumpingjim-capturas.py`.
 
 ```bash
 cd ripworx
-python3 -m http.server 8000      # y abrir http://localhost:8000 en el navegador
+python3 ver-sitio.py          # arranca el servidor y abre el sitio en el navegador
 ```
+
+`ver-sitio.py` sirve esta carpeta en `http://localhost:8000/` (si el puerto está ocupado, usa
+el siguiente libre; se puede elegir otro: `python3 ver-sitio.py 8080`) y abre una pestaña en el
+navegador predeterminado. Al presionar cualquier tecla en la consola, cierra el servidor.
+Con `--red` también se puede abrir desde otro equipo de la misma red (por ejemplo, un celular
+conectado al mismo Wi-Fi): muestra la dirección para escribir en ese navegador. Funciona en
+Linux, macOS y Windows, solo con Python 3.
 
 ## Publicar
 
