@@ -1,0 +1,139 @@
+/*
+ * RIPworx: estilo común del sitio.
+ * La página de cada juego abre como la caja (fondo violeta, título en Raleway Black, la
+ * ilustración con el marco naranja) y sigue como el manual: papel blanco, recuadros de borde
+ * grueso violeta con el título cortando el borde (estética del manual de Grand Prix de
+ * Activision, como el manual de Pothole Rush) y pantallas de la C64 en "televisores".
+ */
+@font-face { font-family: Adventor; src: url(fuentes/texgyreadventor-regular.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: Adventor; font-weight: bold; src: url(fuentes/texgyreadventor-bold.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: Adventor; font-style: italic; src: url(fuentes/texgyreadventor-italic.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: Raleway; font-weight: 900; src: url(fuentes/raleway-black.woff2) format("woff2"); font-display: swap; }
+
+:root {
+  --caja: #470e52;          /* el fondo de la caja de Pothole Rush */
+  --violeta: #5c1670;       /* bordes y títulos sobre papel */
+  --naranja: #df7b2f;       /* el marco de la ilustración */
+  --papel: #ffffff;
+  --tinta: #262626;
+  --tenue: #5e5463;
+  --moneda: #ffff5c;        /* el amarillo de la C64 */
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { font-family: Adventor, "Century Gothic", "Avant Garde", sans-serif; font-size: 17px;
+       line-height: 1.6; color: var(--tinta); background: var(--papel); -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img, video { max-width: 100%; height: auto; display: block; }
+a { color: var(--violeta); text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--naranja); outline-offset: 3px; }
+b, strong { color: #111; }
+
+/* ---------- idiomas: se ve solo el elegido (sin JavaScript, el inglés) ---------- */
+html[data-idioma="en"] [lang="es"]:not(html), html[data-idioma="es"] [lang="en"]:not(html) { display: none !important; }
+
+.idioma { position: absolute; top: 14px; right: 16px; z-index: 2; font: inherit; font-size: 0.85rem;
+          font-weight: bold; color: #fff; background: transparent; border: 2px solid rgba(255,255,255,.7);
+          border-radius: 999px; padding: 4px 14px; cursor: pointer; }
+.idioma:hover { background: rgba(255,255,255,.12); }
+
+/* ---------- la caja (portada) ---------- */
+.caja-tapa { position: relative; background: var(--caja); color: #fff; text-align: center;
+             padding: 56px 16px 44px; overflow: hidden; }
+.caja-tapa .segui { width: 150px; margin: 0 auto 10px; image-rendering: pixelated; }
+.titulo-juego { font-family: Raleway, Adventor, sans-serif; font-weight: 900; line-height: 0.95;
+                font-size: clamp(3rem, 11vw, 7.4rem); letter-spacing: -0.01em; margin: 0; }
+.subtitulo { font-size: clamp(1.05rem, 2.4vw, 1.35rem); margin: 10px 0 30px; opacity: .92; }
+.ilustracion { width: min(1000px, 100%); margin: 0 auto; }
+.caja-tapa .acciones { margin: 34px 0 30px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.boton { display: inline-block; font-weight: bold; text-decoration: none; border-radius: 12px;
+         padding: 12px 26px; font-size: 1.05rem; }
+.boton.lleno { background: var(--naranja); color: #1d0b21; }
+.boton.lleno:hover { background: #ec8c42; }
+.boton.borde { color: #fff; border: 2px solid rgba(255,255,255,.75); }
+.boton.borde:hover { background: rgba(255,255,255,.1); }
+.caja-tapa .marca { width: 150px; margin: 0 auto; }
+
+/* ---------- el manual: papel con recuadros ---------- */
+main { max-width: 980px; margin: 0 auto; padding: 24px 16px 40px; }
+.recuadro { border: 5px solid var(--violeta); padding: 8px 26px 22px; margin: 52px 0 0; }
+.recuadro > h2 { display: table; margin: -1.05em auto 14px; padding: 0 12px; background: var(--papel);
+                 color: var(--violeta); font-size: 1.45rem; line-height: 1.25; text-align: center; }
+.recuadro > p, .recuadro li { max-width: 68ch; }
+.recuadro p { margin: 0 0 12px; }
+
+/* una pantalla de la C64 en un televisor de esquinas redondeadas */
+.tele { background: #111; border-radius: 22px; padding: 14px; margin: 0; }
+.tele img, .tele video { width: 100%; image-rendering: pixelated; border-radius: 4px; }
+figure { margin: 0; }
+figcaption { font-style: italic; font-size: .9rem; color: var(--tenue); text-align: center; margin-top: 8px; }
+
+.portada-juego { display: grid; grid-template-columns: 1.25fr 1fr; gap: 28px; align-items: center; }
+.portada-juego .tele { max-width: 560px; }
+
+/* los objetos de la ruta, con sus sprites */
+.objetos { list-style: none; padding: 0; margin: 6px 0 0; display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px 28px; }
+.objetos li { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: start; max-width: none; }
+.objetos img { width: 56px; height: 44px; object-fit: contain; image-rendering: pixelated; margin-top: 4px; }
+
+/* galería de pantallas */
+.galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; margin-top: 6px; }
+.galeria .tele { padding: 10px; border-radius: 18px; }
+
+/* autos */
+.autos { width: 100%; border-collapse: collapse; margin: 6px 0 4px; }
+.autos th { font-weight: normal; text-align: left; border-bottom: 1px solid #333; padding: 4px 8px; }
+.autos td { padding: 8px; }
+.autos td:first-child { width: 90px; }
+.autos img { height: 34px; width: auto; image-rendering: pixelated; }
+.autos .num { text-align: center; }
+
+/* descarga */
+.descarga { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 34px; }
+.descarga h3 { color: var(--violeta); font-size: 1.05rem; margin: 10px 0 4px; }
+.descarga ul { margin: 0; padding-left: 1.1em; }
+.descarga code { font-family: inherit; font-weight: bold; letter-spacing: .03em; }
+.zip { grid-column: 1 / -1; display: flex; gap: 18px; align-items: center; flex-wrap: wrap;
+       background: #f6f0f8; border-radius: 14px; padding: 16px 20px; margin-bottom: 6px; }
+.zip .boton { background: var(--violeta); color: #fff; }
+.zip .boton:hover { background: var(--caja); }
+.zip p { margin: 0; color: var(--tenue); font-size: .93rem; }
+.aviso { border-left: 5px solid var(--naranja); padding: 2px 0 2px 14px; }
+
+.dos { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+
+/* ---------- pie ---------- */
+footer { background: var(--caja); color: #fff; text-align: center; padding: 34px 16px 30px; margin-top: 60px;
+         font-size: .9rem; }
+footer img { width: 130px; margin: 0 auto 14px; }
+footer a { color: #fff; }
+footer p { margin: 4px auto; max-width: 70ch; opacity: .9; }
+
+/* ---------- inicio de RIPworx ---------- */
+.inicio { background: var(--caja); color: #fff; text-align: center; padding: 80px 16px 70px; position: relative; }
+.inicio .marca { width: min(360px, 70%); margin: 0 auto 18px; }
+.inicio p { font-size: 1.15rem; max-width: 46ch; margin: 0 auto; opacity: .95; }
+.juegos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 10px; }
+.juego { display: block; text-decoration: none; color: inherit; border: 5px solid var(--violeta); }
+.juego:hover .juego-titulo { text-decoration: underline; }
+.juego .tapa-mini { background: var(--caja); padding: 18px; }
+.juego-titulo { font-family: Raleway, sans-serif; font-weight: 900; color: #fff; font-size: 2rem; line-height: 1;
+                text-align: center; margin: 4px 0 14px; }
+.juego .texto { padding: 14px 18px 18px; }
+.juego .texto p { margin: 0 0 6px; }
+.juego.pronto { border-style: dashed; border-color: #a89aae; }
+.juego.pronto .tapa-mini { background: #6f5d78; min-height: 120px; display: grid; place-items: center; }
+
+@media (max-width: 760px) {
+  html { font-size: 16px; }
+  .portada-juego, .descarga, .dos { grid-template-columns: 1fr; }
+  .recuadro { padding: 6px 16px 18px; border-width: 4px; }
+  .recuadro > h2 { font-size: 1.2rem; }
+  .caja-tapa { padding-top: 60px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+.recuadro h3 { color: var(--violeta); font-size: 1.08rem; margin: 18px 0 6px; }
+.juego.pronto { align-self: start; }
