@@ -4,7 +4,7 @@ El sitio de RIPworx: juegos para computadoras retro, hechos en Asunción, Paragu
 GitHub Pages en <https://ripworx.dev/> (dominio propio, registrado en Porkbun; la dirección
 vieja, `czayas.github.io/ripworx/`, lleva ahí).
 
-Tiene dos juegos para Commodore 64: **Pothole Rush** (versión de prueba 11d, solo PAL, en disco y en cartucho EasyFlash) y
+Tiene dos juegos para Commodore 64: **Pothole Rush** (versión 1.0, PAL, NTSC y PAL-N, en disco y en cartucho EasyFlash) y
 **Jumping Jim** (versión 1.1.0, PAL, NTSC y PAL-N; port del juego de roman126 para la ZX
 Spectrum Next, con su permiso).
 
@@ -31,11 +31,11 @@ y el CSS muestra solo el elegido.
 ## Cómo se actualiza
 
 El zip, las capturas y el video se arman desde el repositorio del juego (`czayas/potholerush`), en
-la rama `manual`; `JUEGO` es un árbol de trabajo con la rama del juego (`port-etapa6-c64`), de
-donde salen el `.d64`, el `.prg` y el `.crt`:
+la rama `manual` (que trae la rama del juego, `port-etapa6-c64`, con un merge); de ahí salen el
+`.d64`, el `.prg` y el `.crt`. `JUEGO=<carpeta>` usa el juego de otro árbol de trabajo:
 
 ```bash
-JUEGO=../pr-11d tools/sitio/preparar.sh ../ripworx 11d   # la versión va en el nombre del zip
+tools/sitio/preparar.sh ../ripworx 1.0   # la versión va en el nombre del zip
 ```
 
 El texto de la página se edita a mano en `potholerush/index.html` (los dos idiomas juntos). Si
