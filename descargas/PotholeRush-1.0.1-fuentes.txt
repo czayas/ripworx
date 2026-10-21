@@ -1,0 +1,13 @@
+Código fuente de los programas de este paquete / Source code of the programs in this package
+
+VICE 3.10.0 (GPL 2.0), sin cambios / unmodified:
+  https://github.com/VICE-Team/svn-mirror.git  commit 4d283a2e7dd59b7e378524878e81ecc7826b700c
+SDL 2.32.10 (zlib):        https://github.com/libsdl-org/SDL.git  commit 5d249570393f7a37e037abf22cd6012a4cc56a71
+SDL_image 2.8.12 (zlib):   https://github.com/libsdl-org/SDL_image.git  commit 12cb2e40330d256d9b1329647be8f366546d715c
+zlib 1.3.1:                https://github.com/madler/zlib.git  commit 51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf
+libpng 1.6.59:             https://github.com/pnggroup/libpng.git  commit cd952f49f95bb27154ae77dbb103032d95f6e580
+Open ROMs (LGPL 3.0):      https://github.com/MEGA65/open-roms.git  commit ad178dbe4d48cd6a317737a8e0e7e662f7e33d32 (bin/)
+mingw-w64 winpthreads:     https://github.com/mingw-w64/mingw-w64.git  commit e4dcfb3b598971d49ca9152c1f287c32c1013fbf
+
+Si necesitas una copia del código fuente de VICE tal como se usó, pídela a / If you need
+a copy of the VICE source code as used here, ask: https://ripworx.dev/

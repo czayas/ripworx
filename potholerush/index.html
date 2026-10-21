@@ -11,7 +11,7 @@
 <meta property="og:description" content="Dodge potholes, collect coins, jump over cones. A RIPworx game for the Commodore 64.">
 <meta property="og:image" content="https://ripworx.dev/potholerush/img/portada-og.jpg">
 <link rel="icon" href="../img/icono.png">
-<link rel="stylesheet" href="../estilo.css?v=2">
+<link rel="stylesheet" href="../estilo.css?v=3">
 <script src="../idioma.js"></script>
 </head>
 <body>
@@ -136,7 +136,67 @@
 
 <section class="recuadro" id="descargar">
   <h2><span lang="en">DOWNLOAD</span><span lang="es">DESCARGA</span></h2>
-  <div class="descarga">
+  <div class="pestanas" role="tablist">
+    <button role="tab" id="p-win" aria-controls="d-win">Windows<small class="tuyo"><span lang="en">Your computer</span><span lang="es">Tu equipo</span></small></button>
+    <button role="tab" id="p-lin" aria-controls="d-lin">Linux<small class="tuyo"><span lang="en">Your computer</span><span lang="es">Tu equipo</span></small></button>
+    <button role="tab" id="p-c64" aria-controls="d-c64"><span class="largo">Commodore 64</span><span class="corto">C64</span><small class="tuyo"><span lang="en">Your computer</span><span lang="es">Tu equipo</span></small></button>
+  </div>
+
+  <div class="panel" role="tabpanel" id="d-win" aria-labelledby="p-win">
+    <h3 class="sin-js">Windows</h3>
+    <div class="descarga">
+    <div class="zip">
+      <a class="boton" href="../descargas/PotholeRush-Windows-1.0.1-x64-setup.exe" download><span lang="en">Download the installer</span><span lang="es">Descargar el instalador</span></a>
+      <p><span lang="en">Version 1.0.1 for Windows 10 and 11 (64-bit) · 2.5 MB</span><span lang="es">Versión 1.0.1 para Windows 10 y 11 (64 bits) · 2,5 MB</span><br>
+      <span lang="en">Also: <a href="../descargas/PotholeRush-Windows-1.0.1-x64.zip" download>without installing (.zip, 3.2 MB)</a> · <a href="../descargas/PotholeRush-Windows-1.0.1-x64.msi" download>for managed installs (.msi, 3.4 MB)</a></span>
+      <span lang="es">También: <a href="../descargas/PotholeRush-Windows-1.0.1-x64.zip" download>sin instalar (.zip, 3,2 MB)</a> · <a href="../descargas/PotholeRush-Windows-1.0.1-x64.msi" download>para instalaciones administradas (.msi, 3,4 MB)</a></span></p>
+    </div>
+    <div>
+      <h3 lang="en">What's inside</h3><h3 lang="es">Qué trae</h3>
+      <ul lang="en"><li>The game with a Commodore 64 emulator (VICE) all set up: it starts by itself, in a window</li>
+        <li>Alt+Enter for full screen and back</li><li>A USB gamepad or the keyboard</li></ul>
+      <ul lang="es"><li>El juego con un emulador de Commodore 64 (VICE) ya preparado: arranca solo, en una ventana</li>
+        <li>Alt+Enter para pantalla completa y volver</li><li>Un gamepad USB o el teclado</li></ul>
+    </div>
+    <div>
+      <h3 lang="en">Before you start</h3><h3 lang="es">Antes de empezar</h3>
+      <p class="aviso" lang="en">Windows may say the program comes from an "unknown publisher". Click
+      <b>More info</b> and then <b>Run anyway</b>.</p>
+      <p class="aviso" lang="es">Windows puede avisar que el programa es de un "editor desconocido". Haz clic en
+      <b>Más información</b> y después en <b>Ejecutar de todos modos</b>.</p>
+      <p lang="en">Your progress is saved in your user folder, and it carries over when you install a new version.</p>
+      <p lang="es">Tu avance se guarda en tu carpeta de usuario y pasa solo a la próxima versión que instales.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="d-lin" aria-labelledby="p-lin">
+    <h3 class="sin-js">Linux</h3>
+    <div class="descarga">
+    <div class="zip">
+      <a class="boton" href="../descargas/PotholeRush-Linux-1.0.1-x86_64.AppImage" download><span lang="en">Download the AppImage</span><span lang="es">Descargar el AppImage</span></a>
+      <p><span lang="en">Version 1.0.1 for 64-bit Linux (Ubuntu 24.04, Fedora 39, Debian 13 or newer) · 4.5 MB</span><span lang="es">Versión 1.0.1 para Linux de 64 bits (Ubuntu 24.04, Fedora 39, Debian 13 o más nuevos) · 4,5 MB</span></p>
+    </div>
+    <div>
+      <h3 lang="en">What's inside</h3><h3 lang="es">Qué trae</h3>
+      <ul lang="en"><li>The game with a Commodore 64 emulator (VICE) all set up, in a single file</li>
+        <li>Alt+Enter for full screen and back</li><li>A USB gamepad or the keyboard</li></ul>
+      <ul lang="es"><li>El juego con un emulador de Commodore 64 (VICE) ya preparado, en un solo archivo</li>
+        <li>Alt+Enter para pantalla completa y volver</li><li>Un gamepad USB o el teclado</li></ul>
+    </div>
+    <div>
+      <h3 lang="en">How to start it</h3><h3 lang="es">Cómo abrirlo</h3>
+      <p lang="en">Make it executable (right click, <b>Properties</b>, <b>Permissions</b>) and open it
+      with a double click. Your progress is saved in your home folder.</p>
+      <p lang="es">Hazlo ejecutable (botón derecho, <b>Propiedades</b>, <b>Permisos</b>) y ábrelo con
+      doble clic. Tu avance se guarda en tu carpeta personal.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="d-c64" aria-labelledby="p-c64">
+    <h3 class="sin-js">Commodore 64</h3>
+    <div class="descarga">
     <div class="zip">
       <a class="boton" href="../descargas/PotholeRush-C64-1.0.1.zip" download>
         <span lang="en">Download the ZIP</span><span lang="es">Descargar el ZIP</span></a>
@@ -191,7 +251,34 @@
       <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es">CC BY-NC-ND 4.0</a>.</p>
     </div>
   </div>
+
+  </div>
+  <p class="sumas"><span lang="en">Checksums: <a href="../descargas/PotholeRush-1.0.1-SHA256SUMS.txt">SHA256SUMS</a> · The Windows and Linux packages include the VICE emulator (GPL 2.0) and the Open ROMs (LGPL 3.0): <a href="../descargas/PotholeRush-1.0.1-fuentes.txt">licenses and source code</a></span><span lang="es">Sumas de verificación: <a href="../descargas/PotholeRush-1.0.1-SHA256SUMS.txt">SHA256SUMS</a> · Los paquetes de Windows y Linux traen el emulador VICE (GPL 2.0) y las Open ROMs (LGPL 3.0): <a href="../descargas/PotholeRush-1.0.1-fuentes.txt">licencias y código fuente</a></span></p>
 </section>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js');
+  var ua = navigator.userAgent, so = /Windows/.test(ua) ? 'win' : (/Linux/.test(ua) && !/Android/.test(ua)) ? 'lin' : 'c64';
+  var elegida = so; try { elegida = localStorage.getItem('pestana-descarga') || so; } catch (e) {}
+  var botones = document.querySelectorAll('.pestanas [role=tab]');
+  function mostrar(cual) {
+    botones.forEach(function (b) {
+      var si = b.id === 'p-' + cual; b.setAttribute('aria-selected', si); b.tabIndex = si ? 0 : -1;
+      document.getElementById(b.getAttribute('aria-controls')).hidden = !si;
+    });
+  }
+  botones.forEach(function (b, k) {
+    if (b.id === 'p-' + so) b.classList.add('es-tuyo');
+    b.addEventListener('click', function () { var c = b.id.slice(2); mostrar(c); try { localStorage.setItem('pestana-descarga', c); } catch (e) {} });
+    b.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!d) return;
+      var n = botones[(k + d + botones.length) % botones.length]; n.focus(); n.click();
+    });
+  });
+  mostrar(elegida);
+})();
+</script>
 
 <section class="recuadro historia">
   <h2><span lang="en">THE STORY</span><span lang="es">LA HISTORIA</span></h2>
