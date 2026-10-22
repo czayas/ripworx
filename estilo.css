@@ -183,3 +183,20 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 @media (max-width: 760px) { .pestanas button { flex: 1; padding: 8px 4px 6px; font-size: .95rem; }
   .pestanas .largo { display: none; } .pestanas .corto { display: inline; } }
 .descarga .manual { margin: 12px 0 0; }
+
+/* ---------- novedades (las escribe herramientas/noticias.py desde noticias.json) ---------- */
+.noticias { list-style: none; margin: 4px 0 0; padding: 0; }
+.noticia { padding: 12px 0 12px 16px; border-left: 5px solid var(--color-producto, var(--violeta)); margin: 0 0 10px; }
+.noticia.pr { --color-producto: #5c1670; }
+.noticia.jj { --color-producto: #2f5a24; }
+.noticia.rw { --color-producto: #15234d; }
+.noticia p { margin: 0; max-width: 70ch; }
+.noticia .cabeza { font-size: .85rem; color: var(--tenue); margin-bottom: 2px; }
+.noticia .etiqueta { display: inline-block; margin-left: 8px; padding: 0 9px; border-radius: 999px;
+                     background: var(--color-producto); color: #fff; font-weight: bold; text-decoration: none;
+                     font-size: .8rem; line-height: 1.6; }
+.noticia .etiqueta:hover { text-decoration: underline; }
+.noticia .titular { font-weight: bold; color: #111; text-decoration: none; }
+.noticia .titular:hover { text-decoration: underline; color: var(--color-producto); }
+.mas-noticias { margin: 14px 0 0; font-weight: bold; }
+.inicio.corto { padding: 60px 16px 40px; }

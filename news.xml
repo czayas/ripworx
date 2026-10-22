@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>RIPworx news</title>
+  <link>https://ripworx.dev/noticias/</link>
+  <atom:link href="https://ripworx.dev/news.xml" rel="self" type="application/rss+xml"/>
+  <description>Games for retro computers, made in Asunción, Paraguay.</description>
+  <language>en</language>
+  <lastBuildDate>Thu, 22 Oct 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Pothole Rush comes to Windows and Linux.</title>
+    <link>https://ripworx.dev/potholerush/#descargar</link>
+    <guid isPermaLink="false">2026-10-22-pr-potholerushcomestowindowsandlinux</guid>
+    <pubDate>Thu, 22 Oct 2026 12:00:00 -0300</pubDate>
+    <description>Installer, zip or AppImage: download and play, nothing to set up.</description>
+  </item>
+  <item>
+    <title>Pothole Rush: Version 1.0.1.</title>
+    <link>https://ripworx.dev/potholerush/</link>
+    <guid isPermaLink="false">2026-10-21-pr-version101</guid>
+    <pubDate>Wed, 21 Oct 2026 12:00:00 -0300</pubDate>
+    <description>The wrench and the collisions, closer to the original, and the game version shown on the title screen.</description>
+  </item>
+  <item>
+    <title>Jumping Jim: Version 1.1.1.</title>
+    <link>https://ripworx.dev/jumpingjim/</link>
+    <guid isPermaLink="false">2026-10-20-jj-version111</guid>
+    <pubDate>Tue, 20 Oct 2026 12:00:00 -0300</pubDate>
+    <description>It now recognizes the Drean, the Argentinian C64, and calls it by its name.</description>
+  </item>
+  <item>
+    <title>Pothole Rush: Version 1.0 is here!</title>
+    <link>https://ripworx.dev/potholerush/</link>
+    <guid isPermaLink="false">2026-10-19-pr-version10ishere</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 -0300</pubDate>
+    <description>One program for PAL, NTSC and Drean machines, your car in the color you choose, and a manual with a few words from Sebas and Carlos.</description>
+  </item>
+  <item>
+    <title>RIPworx: We have a new address: ripworx.dev.</title>
+    <link>https://ripworx.dev/</link>
+    <guid isPermaLink="false">2026-10-19-rw-wehaveanewaddressripworxdev</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 -0300</pubDate>
+    <description>Shorter and easier to remember.</description>
+  </item>
+  <item>
+    <title>Pothole Rush: Now on cartridge, too.</title>
+    <link>https://ripworx.dev/potholerush/#descargar</link>
+    <guid isPermaLink="false">2026-10-19-pr-nowoncartridgetoo</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 -0300</pubDate>
+    <description>The EasyFlash cartridge starts by itself at power-on and saves your progress on the cartridge, no disk drive needed.</description>
+  </item>
+  <item>
+    <title>Jumping Jim gets its own page.</title>
+    <link>https://ripworx.dev/jumpingjim/</link>
+    <guid isPermaLink="false">2026-10-18-jj-jumpingjimgetsitsownpage</guid>
+    <pubDate>Sun, 18 Oct 2026 12:00:00 -0300</pubDate>
+    <description>roman126&#x27;s ZX Spectrum Next game, on the Commodore 64.</description>
+  </item>
+  <item>
+    <title>RIPworx is born.</title>
+    <link>https://ripworx.dev/</link>
+    <guid isPermaLink="false">2026-10-18-rw-ripworxisborn</guid>
+    <pubDate>Sun, 18 Oct 2026 12:00:00 -0300</pubDate>
+    <description>The home of our games for retro computers opens with the first test version of Pothole Rush.</description>
+  </item>
+  <item>
+    <title>Jumping Jim: Version 1.1.0.</title>
+    <link>https://ripworx.dev/jumpingjim/</link>
+    <guid isPermaLink="false">2026-10-14-jj-version110</guid>
+    <pubDate>Wed, 14 Oct 2026 12:00:00 -0300</pubDate>
+    <description>A different background on every level, a screen that shakes with every bump, and one program for PAL, NTSC and Drean.</description>
+  </item>
+  <item>
+    <title>Jumping Jim lands on the Commodore 64.</title>
+    <link>https://ripworx.dev/jumpingjim/</link>
+    <guid isPermaLink="false">2026-10-10-jj-jumpingjimlandsonthecommodore64</guid>
+    <pubDate>Sat, 10 Oct 2026 12:00:00 -0300</pubDate>
+    <description>A port of roman126&#x27;s ZX Spectrum Next game, with his permission, free and open source.</description>
+  </item>
+</channel>
+</rss>

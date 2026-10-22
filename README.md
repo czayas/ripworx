@@ -20,6 +20,7 @@ Spectrum Next, con su permiso).
 | `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
 | `descargas/` | Los zip para descargar: el de Pothole Rush (`.d64`, `.prg`, `.crt`, los manuales, un `LEAME-README.txt` y la licencia CC BY-NC-ND 4.0 en `LICENCIA-LICENSE.txt`) y el de Jumping Jim (copia del de `czayas/jumpingjim/releases/`). |
 | `estilo.css` | El estilo común, onda Activision clásica: portada de color con el título en Raleway Black y la ilustración, y recuadros de borde grueso como en el manual de Pothole Rush. Cada página tiene su color: violeta Pothole Rush, verde Jumping Jim (el del borde de su ilustración) y azul marino el inicio. |
+| `noticias.json` | Las novedades (en los dos idiomas). Después de cambiarlo: `python3 herramientas/noticias.py`, que escribe la sección NOVEDADES del inicio (las últimas 5), `noticias/index.html` (todas) y los canales RSS `noticias.xml` (español) y `news.xml` (inglés). |
 | `ver-sitio.py` | Muestra el sitio en la PC: servidor local y una pestaña del navegador (ver abajo). |
 | `idioma.js` | Español o inglés: el que eligió el visitante; si no eligió, el de su navegador (español si está en español, si no, inglés). Sin JavaScript se ve en inglés. |
 | `fuentes/` | Raleway Black y TeX Gyre Adventor en WOFF2 (licencias en `fuentes/LICENCIAS.md` y `OFL-Raleway.txt`). |
@@ -45,6 +46,17 @@ de Carlos, 19/10/2026).
 
 Jumping Jim: el zip se copia tal cual de `releases/` del repositorio `czayas/jumpingjim`, y las
 capturas salen de `herramientas/jumpingjim-capturas.py`.
+
+## Novedades
+
+Cada novedad es una entrada de `noticias.json`: fecha, producto (`pr` Pothole Rush, `jj` Jumping
+Jim, `rw` RIPworx; da el color y el enlace de la etiqueta), a dónde lleva (`enlace`) y el título y
+el texto en español y en inglés. Van solo las que le importan al visitante (versiones nuevas,
+máquinas o formatos nuevos, novedades del sitio); los "próximamente", cuando falte poco para una
+versión estable (decisiones de Carlos, 21/10/2026). Después: `python3 herramientas/noticias.py`.
+
+Para seguirlas con un lector de RSS (en KDE, Akregator: Feed → Add Feed):
+`https://ripworx.dev/noticias.xml` (español) o `https://ripworx.dev/news.xml` (inglés).
 
 ## Ver la página en la PC antes de publicar
 
