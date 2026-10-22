@@ -201,3 +201,10 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 .noticia .titular:hover { text-decoration: underline; color: var(--color-producto); }
 .mas-noticias { margin: 14px 0 0; font-weight: bold; }
 .inicio.corto { padding: 60px 16px 40px; }
+
+/* apoyo en itch.io (página de Pothole Rush, al final de la descarga) */
+.apoyo { display: flex; gap: 18px 24px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+         border: 3px solid var(--naranja); border-radius: 14px; padding: 16px 20px; margin: 22px 0 6px; }
+.apoyo > div { flex: 1 1 320px; }
+.apoyo p { margin: 0; }
+.apoyo .boton { white-space: nowrap; }
