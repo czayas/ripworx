@@ -1,0 +1,34 @@
+Código fuente de los programas de los paquetes de Pothole Rush 1.0.2 para Windows y Linux
+Source code of the programs in the Pothole Rush 1.0.2 packages for Windows and Linux
+
+Copias del código fuente, tal como se usó / Copies of the source code, as used:
+  VICE 3.10.0 (GPL 2.0), con un cambio de una línea / with a one-line change:
+    https://ripworx.dev/descargas/fuentes/vice-3.10.0-source.tar.gz
+    (sin las ROM de Commodore de data/, que los paquetes no usan /
+     without the Commodore ROMs in data/, which the packages don't use)
+    https://ripworx.dev/descargas/fuentes/vice-3.10.0-logfile.patch
+    (el cambio, en src/log.c: no usa el archivo del registro después de cerrarlo;
+     se aplica con "patch -p2" dentro de la carpeta vice-3.10.0 /
+     the change, in src/log.c: it doesn't use the log file after closing it;
+     apply it with "patch -p2" inside the vice-3.10.0 folder)
+  Open ROMs (LGPL 3.0):
+    https://ripworx.dev/descargas/fuentes/open-roms-ad178db-source.tar.gz
+  libfuse 3.15.0 (LGPL 2.1), en el AppImage / in the AppImage:
+    https://ripworx.dev/descargas/fuentes/libfuse-3.15.0-source.tar.gz
+  AppImage type2-runtime (MIT), en el AppImage / in the AppImage:
+    https://ripworx.dev/descargas/fuentes/appimage-type2-runtime-fedfad5-source.tar.gz
+
+Origen de cada uno / Where each one comes from:
+  VICE 3.10.0:               https://github.com/VICE-Team/svn-mirror.git  commit 4d283a2e7dd59b7e378524878e81ecc7826b700c
+  Open ROMs:                 https://github.com/MEGA65/open-roms.git  commit ad178dbe4d48cd6a317737a8e0e7e662f7e33d32 (bin/)
+  libfuse 3.15.0:            https://github.com/libfuse/libfuse.git  commit 6d08472ea47db895748d5ca7d3daf032c3fefcf8
+  AppImage type2-runtime:    https://github.com/AppImage/type2-runtime.git  commit fedfad51acc2860b2916a1eef32ba4a500ff31ef
+  squashfuse 0.5.2 (BSD):    https://github.com/vasi/squashfuse.git  commit 775b4cc72ab47641637897f11ce0da15d5c1f115
+  SDL 2.32.10 (zlib):        https://github.com/libsdl-org/SDL.git  commit 5d249570393f7a37e037abf22cd6012a4cc56a71
+  SDL_image 2.8.12 (zlib):   https://github.com/libsdl-org/SDL_image.git  commit 12cb2e40330d256d9b1329647be8f366546d715c
+  zlib 1.3.1:                https://github.com/madler/zlib.git  commit 51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf
+  libpng 1.6.59:             https://github.com/pnggroup/libpng.git  commit cd952f49f95bb27154ae77dbb103032d95f6e580
+  mingw-w64 winpthreads:     https://github.com/mingw-w64/mingw-w64.git  commit e4dcfb3b598971d49ca9152c1f287c32c1013fbf
+
+Las licencias completas vienen en la carpeta "licencias" de cada paquete.
+The full license texts are in the "licencias" folder of each package.
