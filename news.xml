@@ -6,7 +6,14 @@
   <atom:link href="https://ripworx.dev/news.xml" rel="self" type="application/rss+xml"/>
   <description>Games for retro computers, made in Asunción, Paraguay.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 22 Oct 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Sun, 25 Oct 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Pothole Rush: Version 1.0.2.</title>
+    <link>https://ripworx.dev/potholerush/</link>
+    <guid isPermaLink="false">2026-10-25-pr-version102</guid>
+    <pubDate>Sun, 25 Oct 2026 12:00:00 -0300</pubDate>
+    <description>The perfect jump over a cone, wrenches that count the moment you touch them, and a game that remembers your name. On Windows and Linux, the arrow keys work as a joystick, and on Linux it no longer closes now and then as it opens.</description>
+  </item>
   <item>
     <title>Pothole Rush comes to Windows and Linux.</title>
     <link>https://ripworx.dev/potholerush/#descargar</link>

@@ -1,0 +1,5 @@
+67698b0395d0026d5b663e94517594b473c88ace32640a344df8c5a4932a5a30  PotholeRush-C64-1.0.2.zip
+c62ef27d293783aa4b7f984e9ff9e9611184897aa515fb20d506f2858adfa831  PotholeRush-Linux-1.0.2-x86_64.AppImage
+57d5461863083fb86b3ca77b243745a0c284c0834b45a7ccfba0055e03e5a3bf  PotholeRush-Windows-1.0.2-x64-setup.exe
+c997693f1a7708f84b6542242c193b835246d96ac2ace65a26e8cb18a8db9259  PotholeRush-Windows-1.0.2-x64.msi
+fff8cc4a4ac7a1bbbb77d4ed1c617fcb304847caca3a4bb2cdb49a8e3db68d5a  PotholeRush-Windows-1.0.2-x64.zip
