@@ -2,8 +2,8 @@
   "_LEEME": "Las novedades del sitio, de la más nueva a la más vieja. Después de cambiar este archivo: python3 herramientas/noticias.py (escribe la sección del inicio, noticias/index.html, noticias.xml y news.xml). producto: pr (Pothole Rush), jj (Jumping Jim) o rw (RIPworx). enlace: a dónde lleva la noticia, relativo a la raíz del sitio.",
   "noticias": [
     {"fecha": "2026-10-29", "producto": "pr", "enlace": "potholerush/mega65/",
-     "es": {"titulo": "Pothole Rush llega a la MEGA65.", "texto": "A todo color y de punta a punta de la pantalla, con cinco paisajes, la ruta que resbala en la nieve, sonido en estéreo y la radio del auto con once temas. Para la MEGA65, y para Windows y Linux con el emulador incluido."},
-     "en": {"titulo": "Pothole Rush comes to the MEGA65.", "texto": "In full color and edge to edge, with five landscapes, an icy road in the snow, stereo sound and a car radio with eleven tracks. For the MEGA65, and for Windows and Linux with the emulator included."}},
+     "es": {"titulo": "Pothole Rush llega a la MEGA65.", "texto": "Con cinco paisajes, la ruta que resbala en la nieve, sonido en estéreo y la radio del auto con once temas. Para la MEGA65, y para Windows y Linux con el emulador incluido."},
+     "en": {"titulo": "Pothole Rush comes to the MEGA65.", "texto": "With five landscapes, an icy road in the snow, stereo sound and a car radio with eleven tracks. For the MEGA65, and for Windows and Linux with the emulator included."}},
     {"fecha": "2026-10-25", "producto": "pr", "enlace": "potholerush/c64/",
      "es": {"titulo": "Versión 1.0.2.", "texto": "El salto perfecto sobre el cono, la llave que cuenta apenas la tocas y el juego que recuerda tu nombre. En Windows y Linux, las flechas del teclado como joystick, y en Linux ya no se cierra a veces al abrir."},
      "en": {"titulo": "Version 1.0.2.", "texto": "The perfect jump over a cone, wrenches that count the moment you touch them, and a game that remembers your name. On Windows and Linux, the arrow keys work as a joystick, and on Linux it no longer closes now and then as it opens."}},
