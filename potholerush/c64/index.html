@@ -168,6 +168,10 @@
       <b>Más información</b> y después en <b>Ejecutar de todos modos</b>.</p>
       <p lang="en">Your progress is saved in your user folder, and it carries over when you install a new version.</p>
       <p lang="es">Tu avance se guarda en tu carpeta de usuario y pasa solo a la próxima versión que instales.</p>
+      <p lang="en">Not sure which one to get? <a href="#paquetes">See what each package does</a>, where it
+      saves your progress and how to remove it.</p>
+      <p lang="es">¿No sabes cuál bajar? <a href="#paquetes">Mira qué hace cada paquete</a>, dónde guarda tu
+      avance y cómo quitarlo.</p>
     </div>
     </div>
   </div>
@@ -267,6 +271,61 @@
     <a class="boton lleno" href="https://czayas.itch.io/pothole-rush"><span lang="en">Support it on itch.io</span><span lang="es">Apóyalo en itch.io</span></a>
   </div>
   <p class="sumas"><span lang="en">Checksums: <a href="../../descargas/PotholeRush-1.0.2-SHA256SUMS.txt">SHA256SUMS</a> · The Windows and Linux packages include the VICE emulator (GPL 2.0) and the Open ROMs (LGPL 3.0): <a href="../../descargas/PotholeRush-1.0.2-sources.txt">licenses and source code</a></span><span lang="es">Sumas de verificación: <a href="../../descargas/PotholeRush-1.0.2-SHA256SUMS.txt">SHA256SUMS</a> · Los paquetes de Windows y Linux traen el emulador VICE (GPL 2.0) y las Open ROMs (LGPL 3.0): <a href="../../descargas/PotholeRush-1.0.2-sources.txt">licencias y código fuente</a></span></p>
+</section>
+
+<section class="recuadro" id="paquetes">
+  <h2><span lang="en">WHICH ONE DO I CHOOSE?</span><span lang="es">¿QUÉ PAQUETE ELIJO?</span></h2>
+  <p lang="en">They all have the same game. What changes is how it gets onto your computer, where it
+  keeps your progress (money, purchases, medals, Hall of Fame and options) and what you delete to
+  leave no trace. On Windows, if in doubt, get the installer.</p>
+  <p lang="es">Todos traen el mismo juego. Lo que cambia es cómo llega a tu equipo, dónde guarda tu
+  avance (dinero, compras, medallas, salón de la fama y opciones) y qué borrar para no dejar
+  rastros. En Windows, si dudas, baja el instalador.</p>
+  <table class="paquetes">
+    <thead><tr>
+      <th><span lang="en">Package</span><span lang="es">Paquete</span></th>
+      <th><span lang="en">What it does</span><span lang="es">Qué hace</span></th>
+      <th><span lang="en">Your progress</span><span lang="es">Tu avance</span></th>
+      <th><span lang="en">To remove every trace</span><span lang="es">Para no dejar rastros</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td><b lang="en">Installer</b><b lang="es">Instalador</b> <small>Windows · <code>-setup.exe</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">Unpacks the game into a folder you choose (Documents\Pothole Rush, unless you pick another) and puts a shortcut on the desktop.</span>
+            <span lang="es">Descomprime el juego en la carpeta que elijas (Documentos\Pothole Rush, si no eliges otra) y pone un acceso directo en el escritorio.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">Inside that folder, in the cartridge (potholerush.crt). For a new version, choose the same folder: your progress carries over.</span>
+            <span lang="es">Dentro de esa carpeta, en el cartucho (potholerush.crt). Para una versión nueva, elige la misma carpeta: tu avance pasa solo.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the folder and the shortcut.</span>
+            <span lang="es">Borra la carpeta y el acceso directo.</span></td></tr>
+      <tr><td><b lang="en">For managed installs</b><b lang="es">Para instalaciones administradas</b> <small>Windows · <code>.msi</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">Installs for your user only, without asking for administrator rights, with the game in the Start menu and on the desktop.</span>
+            <span lang="es">Instala solo para tu usuario, sin pedir permisos de administrador, con el juego en el menú Inicio y en el escritorio.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">In %APPDATA%\RIPworx\Pothole Rush. It carries over to new versions.</span>
+            <span lang="es">En %APPDATA%\RIPworx\Pothole Rush. Pasa solo a las versiones nuevas.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Uninstall it from <b>Settings</b> &gt; <b>Apps</b> (your progress isn't deleted), then delete the %APPDATA%\RIPworx\Pothole Rush folder.</span>
+            <span lang="es">Desinstálalo desde <b>Configuración</b> &gt; <b>Aplicaciones</b> (tu avance no se borra) y después borra la carpeta %APPDATA%\RIPworx\Pothole Rush.</span></td></tr>
+      <tr><td><b lang="en">Without installing</b><b lang="es">Sin instalar</b> <small>Windows · <code>.zip</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">Extract the whole zip into a folder and open Pothole Rush.exe. Nothing to install.</span>
+            <span lang="es">Descomprime todo el zip en una carpeta y abre Pothole Rush.exe. No se instala nada.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">Inside that folder, in the cartridge (potholerush.crt). For a new version, copy it into the new folder as potholerush-pasar.crt.</span>
+            <span lang="es">Dentro de esa carpeta, en el cartucho (potholerush.crt). Para una versión nueva, cópialo a la carpeta nueva como potholerush-pasar.crt.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the folder.</span>
+            <span lang="es">Borra la carpeta.</span></td></tr>
+      <tr><td><b>AppImage</b> <small>Linux · <code>.AppImage</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">A single file: make it executable and open it. Nothing to install.</span>
+            <span lang="es">Un solo archivo: hazlo ejecutable y ábrelo. No se instala nada.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">In ~/.local/share/RIPworx/Pothole Rush, along with the emulator's settings. It carries over to new versions.</span>
+            <span lang="es">En ~/.local/share/RIPworx/Pothole Rush, junto con la configuración del emulador. Pasa solo a las versiones nuevas.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the AppImage and that folder. The emulator also leaves two empty folders, ~/.config/vice and ~/.cache/vice: delete them too if you don't use VICE.</span>
+            <span lang="es">Borra el AppImage y esa carpeta. El emulador deja además dos carpetas vacías, ~/.config/vice y ~/.cache/vice: bórralas también si no usas VICE.</span></td></tr>
+      <tr><td><b>Commodore 64</b> <small><code>.zip</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">The disk (<code>.d64</code>), the cartridge (<code>.crt</code>) and the game alone (<code>.prg</code>), for a real C64 or an emulator.</span>
+            <span lang="es">El disco (<code>.d64</code>), el cartucho (<code>.crt</code>) y el juego solo (<code>.prg</code>), para una C64 de verdad o un emulador.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">On the disk you play from, or on the cartridge itself.</span>
+            <span lang="es">En el disco con el que juegas, o en el propio cartucho.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the files. On an EasyFlash, write the cartridge again to start over.</span>
+            <span lang="es">Borra los archivos. En un EasyFlash, vuelve a grabar el cartucho para empezar de cero.</span></td></tr>
+    </tbody>
+  </table>
 </section>
 
 <script>
