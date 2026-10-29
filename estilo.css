@@ -208,3 +208,24 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 .apoyo > div { flex: 1 1 320px; }
 .apoyo p { margin: 0; }
 .apoyo .boton { white-space: nowrap; }
+
+/* ---------- Pothole Rush: la página de cada máquina (pedido de Carlos, 28/10/2026) ---------- */
+/* las tarjetas de las máquinas, con una pantalla del juego */
+.juego .tapa-mini img.pantalla-mini { image-rendering: pixelated; border-radius: 6px; background: #111; }
+.recuadro > .nota { max-width: none; margin: 18px 0 0; color: var(--tenue); }
+/* ¿Qué paquete elijo?: una tabla; en el celular, cada paquete es un bloque */
+.paquetes { width: 100%; border-collapse: collapse; margin: 8px 0 0; font-size: .93rem; line-height: 1.5; }
+.paquetes th { text-align: left; font-weight: bold; color: var(--violeta); border-bottom: 2px solid var(--violeta); padding: 6px 10px; }
+.paquetes td { vertical-align: top; padding: 10px; border-bottom: 1px solid #ddd2e2; }
+.paquetes td:first-child { width: 17%; }
+.paquetes small { display: block; color: var(--tenue); font-size: .82rem; }
+.paquetes code { font-family: inherit; font-weight: bold; white-space: nowrap; }
+.paquetes .rotulo { display: none; }
+@media (max-width: 760px) {
+  .paquetes thead { display: none; }
+  .paquetes, .paquetes tbody, .paquetes tr, .paquetes td { display: block; width: auto !important; }
+  .paquetes tr { border-bottom: 2px solid var(--violeta); padding: 8px 0; }
+  .paquetes td { border: 0; padding: 4px 0; }
+  .paquetes td:first-child { font-size: 1.05rem; }
+  .paquetes .rotulo { display: block; font-weight: bold; color: var(--violeta); font-size: .85rem; }
+}

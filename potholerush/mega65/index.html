@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en" data-idioma="en"
+      data-titulo-en="Pothole Rush for MEGA65 · RIPworx"
+      data-titulo-es="Pothole Rush para MEGA65 · RIPworx">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pothole Rush for MEGA65 · RIPworx</title>
+<meta name="description" content="Pothole Rush, the Scratch game by Sebas Zayas, on the MEGA65: full color, five landscapes, stereo sound and a car radio. Free download for the MEGA65, Windows and Linux.">
+<meta property="og:title" content="Pothole Rush for MEGA65">
+<meta property="og:description" content="Dodge potholes, collect coins, jump over cones, in full color. A RIPworx game for the MEGA65.">
+<meta property="og:image" content="https://ripworx.dev/potholerush/img/portada-og.jpg">
+<link rel="icon" href="../../img/icono.png">
+<link rel="stylesheet" href="../../estilo.css?v=8">
+<script src="../../idioma.js"></script>
+</head>
+<body>
+
+<header class="caja-tapa">
+  <a class="volver" href="../">&larr; Pothole Rush</a>
+  <button class="idioma" type="button"><span lang="en">Español</span><span lang="es">English</span></button>
+  <img class="segui" src="../img/segui.png" alt="SEGUI" width="928" height="216">
+  <h1 class="titulo-juego">POTHOLE RUSH</h1>
+  <p class="subtitulo"><span lang="en">for the MEGA65</span><span lang="es">para MEGA65</span></p>
+  <img class="ilustracion" src="../img/portada.webp" width="1600" height="1023"
+       alt="A yellow car with a rainbow trail jumps over a road full of potholes, coins, a jump tank and a wrench">
+  <div class="acciones">
+    <a class="boton lleno" href="#descargar"><span lang="en">Download for free</span><span lang="es">Descárgalo gratis</span></a>
+    <a class="boton borde" href="#juego"><span lang="en">See it in motion</span><span lang="es">Míralo en movimiento</span></a>
+  </div>
+  <a href="../../"><img class="marca" src="../../img/ripworx-blanco.png" alt="RIPWORX" width="586" height="133"></a>
+</header>
+
+<main>
+
+<section class="recuadro" id="juego">
+  <h2><span lang="en">THE ROAD AHEAD</span><span lang="es">LA RUTA TE ESPERA</span></h2>
+  <div class="portada-juego">
+    <div>
+      <p lang="en">The road is more hole than asphalt, and the only way through is fast. Steer around
+      the potholes, grab every coin you can, and save your jump for when you really need it. Every
+      coin you bring home goes into the bank, to buy a tougher or faster car and a trail to show off
+      with.</p>
+      <p lang="es">La ruta tiene más pozo que asfalto, y la única forma de pasar es ir rápido. Esquiva
+      los baches, recoge todas las monedas que puedas y guarda el salto para cuando de verdad lo
+      necesites. Cada moneda que traes a casa va al banco, para comprar un auto más resistente o más
+      rápido y una estela para lucirte.</p>
+      <p lang="en">On the MEGA65 the whole road is in full color, edge to edge, with Sebas's
+      drawings. A full day goes by every two minutes, through five landscapes, with the radio on.
+      How long can you last?</p>
+      <p lang="es">En la MEGA65 la ruta entera va a todo color, de punta a punta, con los dibujos de
+      Sebas. Un día entero pasa cada dos minutos, por cinco paisajes, con la radio prendida.
+      ¿Cuánto vas a aguantar?</p>
+    </div>
+    <figure class="tele">
+      <video autoplay muted loop playsinline poster="img/partida-poster.png" width="960" height="736">
+        <source src="img/partida.webm" type="video/webm">
+        <source src="img/partida.mp4" type="video/mp4">
+      </video>
+    </figure>
+  </div>
+</section>
+
+<section class="recuadro">
+  <h2><span lang="en">ON THE ROAD</span><span lang="es">EN LA RUTA</span></h2>
+  <ul class="objetos">
+    <li><img src="img/bache.png" alt="">
+      <div><b lang="en">Potholes.</b><b lang="es">Baches.</b>
+      <span lang="en">Each one costs your car a bar of strength. The longer you drive, the more there are.</span>
+      <span lang="es">Cada uno le cuesta a tu auto una barra de fortaleza. Cuanto más conduces, más hay.</span></div></li>
+    <li><img src="img/moneda.png" alt="">
+      <div><b lang="en">Coins.</b><b lang="es">Monedas.</b>
+      <span lang="en">Your score and your money. They drift slower than the road, so they come to you.</span>
+      <span lang="es">Son tu puntaje y tu dinero. Van más despacio que la ruta, así que vienen hacia ti.</span></div></li>
+    <li><img src="img/cono.png" alt="">
+      <div><b lang="en">Cones and obstacles.</b><b lang="es">Conos y obstáculos.</b>
+      <span lang="en">Don't run them over: jump them, and they pay for every instant you hang above. Right under your car at the top of the jump: a perfect jump, +10.</span>
+      <span lang="es">No los atropelles: sáltalos, y te pagan por cada instante que pasas encima. Justo debajo de tu auto en lo más alto del salto: salto perfecto, +10.</span></div></li>
+    <li><img src="img/salto.png" alt="">
+      <div><b lang="en">Jump tanks.</b><b lang="es">Tanques de salto.</b>
+      <span lang="en">One jump each. Up in the air, potholes can't touch you, but you can't steer either.</span>
+      <span lang="es">Un salto cada uno. En el aire, los baches no te tocan, pero tampoco puedes girar.</span></div></li>
+    <li><img src="img/llave.png" alt="">
+      <div><b lang="en">Wrenches.</b><b lang="es">Llaves.</b>
+      <span lang="en">Give back a bar of strength as soon as you touch one. They keep coming as long as your car is missing some.</span>
+      <span lang="es">Te devuelven una barra de fortaleza apenas las tocas. Siguen apareciendo mientras a tu auto le falte alguna.</span></div></li>
+    <li><img src="img/medalla-5.png" alt="">
+      <div><b lang="en">Medals.</b><b lang="es">Medallas.</b>
+      <span lang="en">Seven to win, from cone points to surviving a whole hour. One of them is a secret.</span>
+      <span lang="es">Siete para ganar, desde los puntos de cono hasta aguantar una hora entera. Una es secreta.</span></div></li>
+  </ul>
+</section>
+
+<section class="recuadro">
+  <h2><span lang="en">FIVE LANDSCAPES</span><span lang="es">CINCO PAISAJES</span></h2>
+  <p lang="en">The country, the pine woods, the snow, the desert and the city, in no fixed order.
+  Each one lasts a little over half a minute and brings its own obstacle in place of the cone,
+  which pays the same if you jump it. At night everything gets darker, and the streetlights and
+  your headlights come on.</p>
+  <p lang="es">El campo, los pinares, la nieve, el desierto y la ciudad, sin un orden fijo. Cada uno
+  dura poco más de medio minuto y trae su propio obstáculo en lugar del cono, que paga lo mismo si lo
+  saltas. De noche todo se oscurece, y se prenden los faroles y los faros de tu auto.</p>
+  <ul class="objetos">
+    <li><img src="img/fardo.png" alt="">
+      <div><b lang="en">Country: hay bales.</b><b lang="es">Campo: fardos de paja.</b>
+      <span lang="en">They roll toward you. Hit one and it flies off, then falls back onto the road further ahead.</span>
+      <span lang="es">Ruedan hacia ti. Si chocas uno sale volando, y vuelve a caer en la ruta más adelante.</span></div></li>
+    <li><img src="img/tronco.png" alt="">
+      <div><b lang="en">Pine woods: logs.</b><b lang="es">Pinares: troncos.</b>
+      <span lang="en">They don't fly: a log bumps your car up and pushes it back. It costs no strength, only ground.</span>
+      <span lang="es">No salen volando: un tronco hace saltar tu auto y lo empuja hacia atrás. No cuesta fortaleza, solo terreno.</span></div></li>
+    <li><img src="img/muneco.png" alt="">
+      <div><b lang="en">Snow: snowmen and snowballs.</b><b lang="es">Nieve: muñecos y bolas de nieve.</b>
+      <span lang="en">A snowball rolls and grows as it comes. And the road is icy: your car slides, so steer gently.</span>
+      <span lang="es">La bola rueda y crece mientras viene. Y la ruta está helada: tu auto resbala, así que gira con suavidad.</span></div></li>
+    <li><img src="img/rodadora.png" alt="">
+      <div><b lang="en">Desert: tumbleweeds.</b><b lang="es">Desierto: plantas rodadoras.</b>
+      <span lang="en">They bounce along faster than the road. Hit one and the wind takes it away.</span>
+      <span lang="es">Van rebotando, más rápido que la ruta. Si chocas una, se la lleva el viento.</span></div></li>
+  </ul>
+  <div class="galeria">
+    <figure><div class="tele"><img src="img/campo.png" width="960" height="736" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">The country, in the morning</span><span lang="es">El campo, de mañana</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/pinos.png" width="960" height="736" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">Sunset in the pine woods</span><span lang="es">Atardecer en los pinares</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/nieve.png" width="960" height="736" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">On the ice</span><span lang="es">Sobre el hielo</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/desierto.png" width="960" height="736" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">Across the desert</span><span lang="es">Cruzando el desierto</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/ciudad.png" width="960" height="736" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">Into the city, jumping a cone</span><span lang="es">Llegando a la ciudad, saltando un cono</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/noche.png" width="960" height="736" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">The city at night</span><span lang="es">La ciudad de noche</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="recuadro">
+  <h2><span lang="en">THE CAR RADIO</span><span lang="es">LA RADIO DEL AUTO</span></h2>
+  <div class="dos">
+    <div>
+      <p lang="en">Your car has a radio with eleven tracks, made for the game and played in stereo
+      on the MEGA65's four SID chips, with sampled drums: <i>Pothole Boogie</i>, <i>Who Made the
+      Holes</i>, <i>P.H.R.</i>, <i>You Shook Me All Road Long</i>, <i>Back on Blacktop</i>,
+      <i>Jump to Thrill</i>, <i>Coins Talk</i>, <i>Dirty Roads Done Pothole Deep</i>, <i>Highway
+      Chug</i>, <i>Going the Last Mile</i> and <i>Gonna Jump Now</i>.</p>
+      <p lang="es">Tu auto tiene una radio con once temas, hechos para el juego y tocados en estéreo
+      con los cuatro chips SID de la MEGA65, con batería de muestras: <i>Pothole Boogie</i>,
+      <i>Who Made the Holes</i>, <i>P.H.R.</i>, <i>You Shook Me All Road Long</i>, <i>Back on
+      Blacktop</i>, <i>Jump to Thrill</i>, <i>Coins Talk</i>, <i>Dirty Roads Done Pothole
+      Deep</i>, <i>Highway Chug</i>, <i>Going the Last Mile</i> y <i>Gonna Jump Now</i>.</p>
+      <p lang="en"><b>T</b> tunes in the next track and <b>M</b> turns the radio off and on. Every
+      run starts with the last track you picked.</p>
+      <p lang="es"><b>T</b> sintoniza el tema siguiente y <b>M</b> apaga y prende la radio. Cada
+      partida empieza con el último tema que elegiste.</p>
+    </div>
+    <figure class="tele"><img src="img/radio.png" width="960" height="768" loading="lazy" alt="The radio sign at the start of a run"></figure>
+  </div>
+</section>
+
+<section class="recuadro">
+  <h2><span lang="en">THE GARAGE</span><span lang="es">EL GARAJE</span></h2>
+  <div class="dos">
+    <div>
+      <table class="autos">
+        <thead><tr><th></th><th lang="en">Car</th><th lang="es">Auto</th>
+          <th class="num" lang="en">Strength</th><th class="num" lang="es">Fortaleza</th>
+          <th class="num" lang="en">Speed</th><th class="num" lang="es">Velocidad</th>
+          <th class="num" lang="en">Price</th><th class="num" lang="es">Precio</th></tr></thead>
+        <tbody>
+          <tr><td><img src="img/auto-stock.png" alt=""></td><td><b>Stock</b></td><td class="num">3</td>
+            <td class="num"><span lang="en">Normal</span><span lang="es">Normal</span></td>
+            <td class="num"><span lang="en">Free</span><span lang="es">Gratis</span></td></tr>
+          <tr><td><img src="img/auto-truck.png" alt=""></td><td><b>Truck</b></td><td class="num">4</td>
+            <td class="num"><span lang="en">Normal</span><span lang="es">Normal</span></td><td class="num">200</td></tr>
+          <tr><td><img src="img/auto-sport.png" alt=""></td><td><b>Sport</b></td><td class="num">3</td>
+            <td class="num"><span lang="en">Fast</span><span lang="es">Rápida</span></td><td class="num">500</td></tr>
+          <tr><td><img src="img/auto-secreto.png" alt=""></td><td><b>???</b></td><td class="num">4</td>
+            <td class="num"><span lang="en">Fast</span><span lang="es">Rápida</span></td><td class="num">700</td></tr>
+        </tbody>
+      </table>
+      <p lang="en">Plus nine trails to buy, from plain colors to the Rainbow, and seven body colors to
+      choose from, free. Each car keeps its own color and its own trail. Everything you buy, your
+      medals, your record and the Hall of Fame are saved on the disk.</p>
+      <p lang="es">Y nueve estelas para comprar, desde colores lisos hasta la Rainbow, y siete colores
+      de carrocería para elegir, gratis. Cada auto guarda su color y su estela. Todo lo que compras,
+      tus medallas, tu récord y el salón de la fama se guardan en el disco.</p>
+    </div>
+    <figure class="tele"><img src="img/seleccion.png" width="960" height="600" alt="The garage screen"></figure>
+  </div>
+</section>
+
+<section class="recuadro">
+  <h2><span lang="en">SCREENS</span><span lang="es">PANTALLAS</span></h2>
+  <div class="galeria">
+    <figure><div class="tele"><img src="img/titulo.png" width="960" height="600" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">The title screen</span><span lang="es">La pantalla de título</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/medallas.png" width="960" height="600" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">Seven medals to win</span><span lang="es">Siete medallas para ganar</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/fama.png" width="960" height="600" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">The Hall of Fame, with the ten best drivers</span><span lang="es">El salón de la fama, con los diez mejores conductores</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/nombre.png" width="960" height="600" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">A new high score</span><span lang="es">Un puntaje nuevo para el salón</span></figcaption></figure>
+    <figure><div class="tele"><img src="img/tryagain.png" width="960" height="600" loading="lazy" alt=""></div>
+      <figcaption><span lang="en">Try again? Yes, right away</span><span lang="es">¿Otra vez? Sí, enseguida</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="recuadro" id="descargar">
+  <h2><span lang="en">DOWNLOAD</span><span lang="es">DESCARGA</span></h2>
+  <div class="pestanas" role="tablist">
+    <button role="tab" id="p-win" aria-controls="d-win">Windows<small class="tuyo"><span lang="en">Your computer</span><span lang="es">Tu equipo</span></small></button>
+    <button role="tab" id="p-lin" aria-controls="d-lin">Linux<small class="tuyo"><span lang="en">Your computer</span><span lang="es">Tu equipo</span></small></button>
+    <button role="tab" id="p-m65" aria-controls="d-m65">MEGA65<small class="tuyo"><span lang="en">Your computer</span><span lang="es">Tu equipo</span></small></button>
+  </div>
+
+  <div class="panel" role="tabpanel" id="d-win" aria-labelledby="p-win">
+    <h3 class="sin-js">Windows</h3>
+    <div class="descarga">
+    <div class="zip">
+      <a class="boton" href="../../descargas/PotholeRush-MEGA65-Windows-1.0.0-x64-setup.exe" download><span lang="en">Download the installer</span><span lang="es">Descargar el instalador</span></a>
+      <p><span lang="en">Version 1.0.0 for Windows 10 and 11 (64-bit) · 1.5 MB</span><span lang="es">Versión 1.0.0 para Windows 10 y 11 (64 bits) · 1,5 MB</span><br>
+      <span lang="en">Also: <a href="../../descargas/PotholeRush-MEGA65-Windows-1.0.0-x64-portable.exe" download>portable, a single file (.exe, 1.5 MB)</a> · <a href="../../descargas/PotholeRush-MEGA65-Windows-1.0.0-x64.zip" download>without installing (.zip, 2.0 MB)</a> · <a href="../../descargas/PotholeRush-MEGA65-Windows-1.0.0-x64.msi" download>for managed installs (.msi, 2.2 MB)</a></span>
+      <span lang="es">También: <a href="../../descargas/PotholeRush-MEGA65-Windows-1.0.0-x64-portable.exe" download>portátil, un solo archivo (.exe, 1,5 MB)</a> · <a href="../../descargas/PotholeRush-MEGA65-Windows-1.0.0-x64.zip" download>sin instalar (.zip, 2,0 MB)</a> · <a href="../../descargas/PotholeRush-MEGA65-Windows-1.0.0-x64.msi" download>para instalaciones administradas (.msi, 2,2 MB)</a></span></p>
+    </div>
+    <div>
+      <h3 lang="en">What's inside</h3><h3 lang="es">Qué trae</h3>
+      <ul lang="en"><li>The game with a MEGA65 emulator (Xemu) all set up: it starts by itself, in a window</li>
+        <li>F11 for full screen and back</li><li>W A S D or the arrow keys, or a USB gamepad</li></ul>
+      <ul lang="es"><li>El juego con un emulador de MEGA65 (Xemu) ya preparado: arranca solo, en una ventana</li>
+        <li>F11 para pantalla completa y volver</li><li>W A S D o las flechas del teclado, o un gamepad USB</li></ul>
+      <p class="manual" lang="en"><a href="../../descargas/PotholeRush-MEGA65-1.0.0-Manual-EN.pdf">Instruction manual</a> (PDF, 0.8 MB)</p>
+      <p class="manual" lang="es"><a href="../../descargas/PotholeRush-MEGA65-1.0.0-Manual-ES.pdf">Manual de instrucciones</a> (PDF, 0,8 MB)</p>
+    </div>
+    <div>
+      <h3 lang="en">Before you start</h3><h3 lang="es">Antes de empezar</h3>
+      <p class="aviso" lang="en">Windows may say the program comes from an "unknown publisher". Click
+      <b>More info</b> and then <b>Run anyway</b>.</p>
+      <p class="aviso" lang="es">Windows puede avisar que el programa es de un "editor desconocido". Haz clic en
+      <b>Más información</b> y después en <b>Ejecutar de todos modos</b>.</p>
+      <p lang="en">Not sure which one to get? <a href="#paquetes">See what each package does</a>, where it
+      saves your progress and how to remove it.</p>
+      <p lang="es">¿No sabes cuál bajar? <a href="#paquetes">Mira qué hace cada paquete</a>, dónde guarda tu
+      avance y cómo quitarlo.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="d-lin" aria-labelledby="p-lin">
+    <h3 class="sin-js">Linux</h3>
+    <div class="descarga">
+    <div class="zip">
+      <a class="boton" href="../../descargas/PotholeRush-MEGA65-Linux-1.0.0-x86_64.AppImage" download><span lang="en">Download the AppImage</span><span lang="es">Descargar el AppImage</span></a>
+      <p><span lang="en">Version 1.0.0 for 64-bit Linux (Ubuntu 24.04, Fedora 39, Debian 13 or newer) · 3.4 MB</span><span lang="es">Versión 1.0.0 para Linux de 64 bits (Ubuntu 24.04, Fedora 39, Debian 13 o más nuevos) · 3,4 MB</span></p>
+    </div>
+    <div>
+      <h3 lang="en">What's inside</h3><h3 lang="es">Qué trae</h3>
+      <ul lang="en"><li>The game with a MEGA65 emulator (Xemu) all set up, in a single file</li>
+        <li>F11 for full screen and back</li><li>W A S D or the arrow keys, or a USB gamepad</li></ul>
+      <ul lang="es"><li>El juego con un emulador de MEGA65 (Xemu) ya preparado, en un solo archivo</li>
+        <li>F11 para pantalla completa y volver</li><li>W A S D o las flechas del teclado, o un gamepad USB</li></ul>
+      <p class="manual" lang="en"><a href="../../descargas/PotholeRush-MEGA65-1.0.0-Manual-EN.pdf">Instruction manual</a> (PDF, 0.8 MB)</p>
+      <p class="manual" lang="es"><a href="../../descargas/PotholeRush-MEGA65-1.0.0-Manual-ES.pdf">Manual de instrucciones</a> (PDF, 0,8 MB)</p>
+    </div>
+    <div>
+      <h3 lang="en">How to start it</h3><h3 lang="es">Cómo abrirlo</h3>
+      <p lang="en">Make it executable (right click, <b>Properties</b>, <b>Permissions</b>) and open it
+      with a double click. Your progress is saved in your home folder, and it carries over to the next
+      version.</p>
+      <p lang="es">Hazlo ejecutable (botón derecho, <b>Propiedades</b>, <b>Permisos</b>) y ábrelo con
+      doble clic. Tu avance se guarda en tu carpeta personal y pasa solo a la próxima versión.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="d-m65" aria-labelledby="p-m65">
+    <h3 class="sin-js">MEGA65</h3>
+    <div class="descarga">
+    <div class="zip">
+      <a class="boton" href="../../descargas/PotholeRush-MEGA65-1.0.0.zip" download>
+        <span lang="en">Download the ZIP</span><span lang="es">Descargar el ZIP</span></a>
+      <p><span lang="en">Version 1.0.0 for PAL and NTSC · 1.7 MB</span><span lang="es">Versión 1.0.0 para PAL y NTSC · 1,7 MB</span></p>
+    </div>
+    <div>
+      <h3 lang="en">What's inside</h3><h3 lang="es">Qué trae</h3>
+      <ul lang="en">
+        <li><code>.d81</code> disk image, where the game also saves your progress</li>
+        <li>The instruction manual in English and in Spanish (PDF)</li>
+      </ul>
+      <ul lang="es">
+        <li>Imagen de disco <code>.d81</code>, donde el juego también guarda tu avance</li>
+        <li>El manual de instrucciones en español y en inglés (PDF)</li>
+      </ul>
+      <h3 lang="en">What you need</h3><h3 lang="es">Qué necesitas</h3>
+      <p lang="en">A MEGA65 (PAL or NTSC: the game works on both). A joystick in either port, or just
+      the keyboard. Or the <a href="https://github.com/lgblgblgb/xemu">Xemu</a> emulator with the
+      MEGA65 ROM.</p>
+      <p lang="es">Una MEGA65 (PAL o NTSC: el juego anda en las dos). Un joystick en cualquier puerto, o
+      solo el teclado. O el emulador <a href="https://github.com/lgblgblgb/xemu">Xemu</a> con la ROM
+      de la MEGA65.</p>
+    </div>
+    <div>
+      <h3 lang="en">How to load it</h3><h3 lang="es">Cómo cargarlo</h3>
+      <p lang="en">Copy the <code>.d81</code> to the SD card and mount it as drive 8 (from the Freezer
+      menu: hold RESTORE for a moment). Then type <code>RUN "POTHOLE"</code>. It takes a couple of
+      seconds to load. The disk must stay in drive 8: that's where your progress goes. It can't save
+      on a real floppy disk.</p>
+      <p lang="es">Copia el <code>.d81</code> a la tarjeta SD y móntalo como unidad 8 (desde el menú
+      del Freezer: mantén apretada RESTORE un momento). Después escribe <code>RUN "POTHOLE"</code>.
+      Tarda un par de segundos en cargar. El disco tiene que quedar en la unidad 8: ahí se guarda tu
+      avance. En un disquete de verdad no puede guardar.</p>
+      <h3 lang="en">Share it</h3><h3 lang="es">Compártelo</h3>
+      <p lang="en">You may copy and share the zip and everything in it, free of charge and for
+      non-commercial purposes, as is and crediting its authors:
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> license.</p>
+      <p lang="es">Puedes copiar y compartir el zip y todo lo que trae, gratis y sin fines
+      comerciales, tal cual y diciendo quiénes son sus autores: licencia
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es">CC BY-NC-ND 4.0</a>.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="apoyo">
+    <div>
+      <p lang="en"><b>Pothole Rush is free, and it's also on itch.io,</b> where you can pay what you
+      want. Any contribution helps us keep improving it and make new games.</p>
+      <p lang="es"><b>Pothole Rush es gratis, y también está en itch.io,</b> donde puedes pagar lo
+      que quieras. Cualquier aporte nos ayuda a seguir mejorándolo y a hacer juegos nuevos.</p>
+    </div>
+    <a class="boton lleno" href="https://czayas.itch.io/pothole-rush"><span lang="en">Support it on itch.io</span><span lang="es">Apóyalo en itch.io</span></a>
+  </div>
+  <p class="sumas"><span lang="en">Checksums: <a href="../../descargas/PotholeRush-MEGA65-1.0.0-SHA256SUMS.txt">SHA256SUMS</a> · The Windows and Linux packages include the Xemu emulator (GPL 2.0), with files of the MEGA65 project (GPL) and its Open ROMs (LGPL 3.0): <a href="../../descargas/PotholeRush-MEGA65-1.0.0-sources.txt">licenses and source code</a></span><span lang="es">Sumas de verificación: <a href="../../descargas/PotholeRush-MEGA65-1.0.0-SHA256SUMS.txt">SHA256SUMS</a> · Los paquetes de Windows y Linux traen el emulador Xemu (GPL 2.0), con archivos del proyecto MEGA65 (GPL) y sus Open ROMs (LGPL 3.0): <a href="../../descargas/PotholeRush-MEGA65-1.0.0-sources.txt">licencias y código fuente</a></span></p>
+</section>
+
+<section class="recuadro" id="paquetes">
+  <h2><span lang="en">WHICH ONE DO I CHOOSE?</span><span lang="es">¿QUÉ PAQUETE ELIJO?</span></h2>
+  <p lang="en">They all have the same game. What changes is how it gets onto your computer, where it
+  keeps your progress (money, purchases, medals, Hall of Fame, options and radio track) and what you
+  delete to leave no trace. On Windows, if in doubt, get the installer.</p>
+  <p lang="es">Todos traen el mismo juego. Lo que cambia es cómo llega a tu equipo, dónde guarda tu
+  avance (dinero, compras, medallas, salón de la fama, opciones y tema de la radio) y qué borrar para
+  no dejar rastros. En Windows, si dudas, baja el instalador.</p>
+  <div class="tabla-paquetes">
+  <table class="paquetes">
+    <thead><tr>
+      <th><span lang="en">Package</span><span lang="es">Paquete</span></th>
+      <th><span lang="en">What it does</span><span lang="es">Qué hace</span></th>
+      <th><span lang="en">Your progress</span><span lang="es">Tu avance</span></th>
+      <th><span lang="en">To remove every trace</span><span lang="es">Para no dejar rastros</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td><b lang="en">Installer</b><b lang="es">Instalador</b> <small>Windows · <code>-setup.exe</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">Unpacks the game into a folder you choose (Documents\Pothole Rush MEGA65, unless you pick another) and puts a shortcut on the desktop.</span>
+            <span lang="es">Descomprime el juego en la carpeta que elijas (Documentos\Pothole Rush MEGA65, si no eliges otra) y pone un acceso directo en el escritorio.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">In that folder. For a new version, choose the same folder: your progress stays.</span>
+            <span lang="es">En esa carpeta. Para una versión nueva, elige la misma carpeta: tu avance se queda.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the folder and the shortcut.</span>
+            <span lang="es">Borra la carpeta y el acceso directo.</span></td></tr>
+      <tr><td><b lang="en">Portable</b><b lang="es">Portátil</b> <small>Windows · <code>-portable.exe</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">A single file you can keep anywhere, even on a USB stick. While you play, it unpacks the game into a temporary Windows folder, and deletes it when you close the game.</span>
+            <span lang="es">Un solo archivo que puedes guardar donde quieras, también en un pendrive. Mientras juegas, descomprime el juego en una carpeta temporal de Windows y la borra al cerrar el juego.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">In %APPDATA%\RIPworx\Pothole Rush MEGA65, the same as the <code>.msi</code>: play with either one and your progress is the same (don't open both at once). It stays with new versions.</span>
+            <span lang="es">En %APPDATA%\RIPworx\Pothole Rush MEGA65, la misma que el <code>.msi</code>: juegues con uno o con el otro, el avance es el mismo (no abras los dos a la vez). Se conserva con las versiones nuevas.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the <code>.exe</code> and the %APPDATA%\RIPworx\Pothole Rush MEGA65 folder.</span>
+            <span lang="es">Borra el <code>.exe</code> y la carpeta %APPDATA%\RIPworx\Pothole Rush MEGA65.</span></td></tr>
+      <tr><td><b lang="en">For managed installs</b><b lang="es">Para instalaciones administradas</b> <small>Windows · <code>.msi</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">Installs for your user only, without asking for administrator rights, with the game in the Start menu and on the desktop.</span>
+            <span lang="es">Instala solo para tu usuario, sin pedir permisos de administrador, con el juego en el menú Inicio y en el escritorio.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">In %APPDATA%\RIPworx\Pothole Rush MEGA65, the same as the portable one. It stays with new versions.</span>
+            <span lang="es">En %APPDATA%\RIPworx\Pothole Rush MEGA65, la misma que el portátil. Se conserva con las versiones nuevas.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Uninstall it from <b>Settings</b> &gt; <b>Apps</b> (your progress isn't deleted), then delete the %APPDATA%\RIPworx\Pothole Rush MEGA65 folder.</span>
+            <span lang="es">Desinstálalo desde <b>Configuración</b> &gt; <b>Aplicaciones</b> (tu avance no se borra) y después borra la carpeta %APPDATA%\RIPworx\Pothole Rush MEGA65.</span></td></tr>
+      <tr><td><b lang="en">Without installing</b><b lang="es">Sin instalar</b> <small>Windows · <code>.zip</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">Extract the whole zip into a folder and open Pothole Rush.exe. Nothing to install.</span>
+            <span lang="es">Descomprime todo el zip en una carpeta y abre Pothole Rush.exe. No se instala nada.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">Inside that folder (emulador\potholerush.d81). For a new version, copy that file into the new folder.</span>
+            <span lang="es">Dentro de esa carpeta (emulador\potholerush.d81). Para una versión nueva, copia ese archivo a la carpeta nueva.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the folder.</span><span lang="es">Borra la carpeta.</span></td></tr>
+      <tr><td><b>AppImage</b> <small>Linux · <code>.AppImage</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">A single file: make it executable and open it. Nothing to install.</span>
+            <span lang="es">Un solo archivo: hazlo ejecutable y ábrelo. No se instala nada.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">In ~/.local/share/RIPworx/Pothole Rush MEGA65. It stays with new versions.</span>
+            <span lang="es">En ~/.local/share/RIPworx/Pothole Rush MEGA65. Se conserva con las versiones nuevas.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the AppImage and that folder.</span><span lang="es">Borra el AppImage y esa carpeta.</span></td></tr>
+      <tr><td><b>MEGA65</b> <small><code>.zip</code></small></td>
+        <td><span class="rotulo"><span lang="en">What it does:</span><span lang="es">Qué hace:</span></span><span lang="en">The <code>.d81</code> disk image, for a real MEGA65 or for Xemu with the MEGA65 ROM.</span>
+            <span lang="es">La imagen de disco <code>.d81</code>, para una MEGA65 de verdad o para Xemu con la ROM de la MEGA65.</span></td>
+        <td><span class="rotulo"><span lang="en">Your progress:</span><span lang="es">Tu avance:</span></span><span lang="en">On the <code>.d81</code> itself, in the POTHOLE.SAV file. Keep your copy of the disk to keep your progress.</span>
+            <span lang="es">En el mismo <code>.d81</code>, en el archivo POTHOLE.SAV. Guarda tu copia del disco para conservar tu avance.</span></td>
+        <td><span class="rotulo"><span lang="en">To remove every trace:</span><span lang="es">Para no dejar rastros:</span></span><span lang="en">Delete the <code>.d81</code>.</span><span lang="es">Borra el <code>.d81</code>.</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="nota" lang="en">To start over without removing the game, delete only the place where your progress is kept.</p>
+  <p class="nota" lang="es">Para empezar de cero sin quitar el juego, borra solo el lugar donde se guarda tu avance.</p>
+</section>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js');
+  var ua = navigator.userAgent, so = /Windows/.test(ua) ? 'win' : (/Linux/.test(ua) && !/Android/.test(ua)) ? 'lin' : 'm65';
+  var botones = document.querySelectorAll('.pestanas [role=tab]');
+  var elegida = so;
+  try { var g = localStorage.getItem('pestana-descarga-mega65'); if (g && document.getElementById('p-' + g)) elegida = g; } catch (e) {}
+  function mostrar(cual) {
+    botones.forEach(function (b) {
+      var si = b.id === 'p-' + cual; b.setAttribute('aria-selected', si); b.tabIndex = si ? 0 : -1;
+      document.getElementById(b.getAttribute('aria-controls')).hidden = !si;
+    });
+  }
+  botones.forEach(function (b, k) {
+    if (b.id === 'p-' + so) b.classList.add('es-tuyo');
+    b.addEventListener('click', function () { var c = b.id.slice(2); mostrar(c); try { localStorage.setItem('pestana-descarga-mega65', c); } catch (e) {} });
+    b.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!d) return;
+      var n = botones[(k + d + botones.length) % botones.length]; n.focus(); n.click();
+    });
+  });
+  mostrar(elegida);
+})();
+</script>
+
+<section class="recuadro historia">
+  <h2><span lang="en">THE STORY</span><span lang="es">LA HISTORIA</span></h2>
+  <div class="fotos">
+    <figure><img src="../img/foto-sebas.jpg" width="640" height="480" loading="lazy" alt="Sebas Zayas"></figure>
+    <figure><img src="../img/foto-carlos.jpg" width="640" height="480" loading="lazy" alt="Carlos Zayas"></figure>
+  </div>
+  <p lang="en"><b>Sebas Zayas</b> created Pothole Rush in 2014 on MIT's Scratch website. You can
+  still play the original at <a href="https://scratch.mit.edu/projects/24184856/">scratch.mit.edu</a>.</p>
+  <p lang="es"><b>Sebas Zayas</b> creó Pothole Rush en 2014 en el sitio de Scratch del MIT. El
+  original todavía se puede jugar en <a href="https://scratch.mit.edu/projects/24184856/">scratch.mit.edu</a>.</p>
+  <p lang="en">Twelve years later, his father <b>Carlos Zayas</b> brought it to the
+  <a href="../c64/">Commodore 64</a>, his favorite retro computer, and then to the MEGA65, the new
+  8-bit computer that carries on the Commodore 65, with the help of Claude, by Anthropic. The rules,
+  the spirit and the drawings are Sebas's, now in full color; the music, the radio and much of the
+  scenery were made anew for the MEGA65.</p>
+  <p lang="es">Doce años después, su padre, <b>Carlos Zayas</b>, lo llevó a la
+  <a href="../c64/">Commodore 64</a>, su computadora retro favorita, y después a la MEGA65, la nueva
+  computadora de 8 bits heredera de la Commodore 65, con la ayuda de Claude, de Anthropic. Las reglas,
+  el espíritu y los dibujos son de Sebas, ahora a todo color; la música, la radio y buena parte del
+  paisaje se hicieron de nuevo para la MEGA65.</p>
+  <h3 lang="en">What's different from the original</h3><h3 lang="es">Qué cambia respecto del original</h3>
+  <ul lang="en">
+    <li>Joystick or keyboard instead of the mouse.</li>
+    <li>The whole road, edge to edge, without the original's black frame.</li>
+    <li>Five landscapes in random order, each with its own obstacle, an icy road in the snow, and streetlights and headlights at night.</li>
+    <li>New stereo music for the MEGA65's four SID chips, with sampled drums, and a car radio with eleven tracks.</li>
+    <li>Everything is saved on the disk: money, purchases, medals, options, the radio track and the Hall of Fame, which is new.</li>
+    <li>A new medal for surviving a whole hour, and one more bar of strength for every car.</li>
+  </ul>
+  <ul lang="es">
+    <li>Joystick o teclado en lugar del mouse.</li>
+    <li>La ruta entera, de punta a punta, sin el marco negro del original.</li>
+    <li>Cinco paisajes en orden al azar, cada uno con su obstáculo, la ruta helada en la nieve, y faroles y faros de noche.</li>
+    <li>Música nueva en estéreo para los cuatro chips SID de la MEGA65, con batería de muestras, y una radio en el auto con once temas.</li>
+    <li>Todo se guarda en el disco: el dinero, las compras, las medallas, las opciones, el tema de la radio y el salón de la fama, que es nuevo.</li>
+    <li>Una medalla nueva por aguantar una hora entera, y una barra más de fortaleza en cada auto.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <a href="../../"><img src="../../img/ripworx-blanco.png" alt="RIPWORX" width="586" height="133"></a>
+  <p lang="en">Original game by Sebas Zayas. MEGA65 version by Carlos Zayas.</p>
+  <p lang="es">Juego original de Sebas Zayas. Versión para MEGA65 de Carlos Zayas.</p>
+  <p lang="en">Made in Asunción, Paraguay, in 2026.</p>
+  <p lang="es">Hecho en Asunción, Paraguay, en 2026.</p>
+  <p lang="en">Visit <a href="https://www.youtube.com/@retroinfopy">Retro Informática Paraguay</a> on YouTube.</p>
+  <p lang="es">Visita <a href="https://www.youtube.com/@retroinfopy">Retro Informática Paraguay</a> en YouTube.</p>
+  <p lang="en">© 2026 RIPworx. Pothole Rush: CC BY-NC-ND 4.0. MEGA65 and Commodore are trademarks of their respective owners.</p>
+  <p lang="es">© 2026 RIPworx. Pothole Rush: CC BY-NC-ND 4.0. MEGA65 y Commodore son marcas registradas de sus respectivos dueños.</p>
+</footer>
+
+</body>
+</html>

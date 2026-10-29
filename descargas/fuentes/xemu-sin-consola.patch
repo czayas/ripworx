@@ -1,0 +1,19 @@
+Cambio a Xemu para el kit para pilotos de Pothole Rush (tools/pilotos/armar_kit.sh): con la
+variable de entorno XEMU_SIN_CONSOLA, Xemu no abre su consola de Windows al arrancar (la ventana
+negra de texto que se veía un instante). El lanzador portátil la pone. No toca la emulación.
+
+diff --git a/xemu/emutools.c b/xemu/emutools.c
+index 9456ee9..459be22 100644
+--- a/xemu/emutools.c
++++ b/xemu/emutools.c
+@@ -916,7 +916,9 @@ void xemu_pre_init ( const char *app_organization, const char *app_name, const c
+ 	atexit(shutdown_emulator);
+ #else
+ 	char *p;
+-	sysconsole_open();
++	// RIPworx (kit de Pothole Rush): con XEMU_SIN_CONSOLA no se abre la consola de Windows al arrancar
++	if (!getenv("XEMU_SIN_CONSOLA"))
++		sysconsole_open();
+ 	if (chatty_xemu)
+ 		xemu_dump_version(stdout, slogan);
+ 	// Initialize SDL with no subsystems

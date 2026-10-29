@@ -1,0 +1,8 @@
+696c37d6797bddf5ee739ed9cef4bc296726c83435660346d9826f8bdde5364a  PotholeRush-MEGA65-1.0.0-Manual-EN.pdf
+9ebf522d0361776f89c533c5be9371a7bad49d5060bdcc543a00df5d55ea92a1  PotholeRush-MEGA65-1.0.0-Manual-ES.pdf
+75d7ef7c9a0a49ba31f163ea7e0b5e170399925998d48d7e1c2eac0dce950c9e  PotholeRush-MEGA65-1.0.0.zip
+d7d6d669a3f174dd96b9c7f2ec1f9df686a25842f955d0d99b30b50416c74420  PotholeRush-MEGA65-Linux-1.0.0-x86_64.AppImage
+f5c767a0c10e5657c02ac0728000ff1ef87d1c67a323814b4c0e98df5977379d  PotholeRush-MEGA65-Windows-1.0.0-x64-portable.exe
+d9852d67e9ab294488368be8a0e096fb7d904e5c3d8d8a667aed937392d9613a  PotholeRush-MEGA65-Windows-1.0.0-x64-setup.exe
+b02bde8d5255cb4b9925f34fde1ed8a48400aad23f6faf98d82f43fcd966fee5  PotholeRush-MEGA65-Windows-1.0.0-x64.msi
+eff883724b68555c639b0f5b01d9982d11334d782e3ba94c0b6e702f4552d3cc  PotholeRush-MEGA65-Windows-1.0.0-x64.zip

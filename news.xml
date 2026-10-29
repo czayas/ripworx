@@ -6,24 +6,31 @@
   <atom:link href="https://ripworx.dev/news.xml" rel="self" type="application/rss+xml"/>
   <description>Games for retro computers, made in Asunción, Paraguay.</description>
   <language>en</language>
-  <lastBuildDate>Sun, 25 Oct 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Thu, 29 Oct 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Pothole Rush comes to the MEGA65.</title>
+    <link>https://ripworx.dev/potholerush/mega65/</link>
+    <guid isPermaLink="false">2026-10-29-pr-potholerushcomestothemega65</guid>
+    <pubDate>Thu, 29 Oct 2026 12:00:00 -0300</pubDate>
+    <description>In full color and edge to edge, with five landscapes, an icy road in the snow, stereo sound and a car radio with eleven tracks. For the MEGA65, and for Windows and Linux with the emulator included.</description>
+  </item>
   <item>
     <title>Pothole Rush: Version 1.0.2.</title>
-    <link>https://ripworx.dev/potholerush/</link>
+    <link>https://ripworx.dev/potholerush/c64/</link>
     <guid isPermaLink="false">2026-10-25-pr-version102</guid>
     <pubDate>Sun, 25 Oct 2026 12:00:00 -0300</pubDate>
     <description>The perfect jump over a cone, wrenches that count the moment you touch them, and a game that remembers your name. On Windows and Linux, the arrow keys work as a joystick, and on Linux it no longer closes now and then as it opens.</description>
   </item>
   <item>
     <title>Pothole Rush comes to Windows and Linux.</title>
-    <link>https://ripworx.dev/potholerush/#descargar</link>
+    <link>https://ripworx.dev/potholerush/c64/#descargar</link>
     <guid isPermaLink="false">2026-10-22-pr-potholerushcomestowindowsandlinux</guid>
     <pubDate>Thu, 22 Oct 2026 12:00:00 -0300</pubDate>
     <description>Installer, zip or AppImage: download and play, nothing to set up.</description>
   </item>
   <item>
     <title>Pothole Rush: Version 1.0.1.</title>
-    <link>https://ripworx.dev/potholerush/</link>
+    <link>https://ripworx.dev/potholerush/c64/</link>
     <guid isPermaLink="false">2026-10-21-pr-version101</guid>
     <pubDate>Wed, 21 Oct 2026 12:00:00 -0300</pubDate>
     <description>The wrench and the collisions, closer to the original, and the game version shown on the title screen.</description>
@@ -37,7 +44,7 @@
   </item>
   <item>
     <title>Pothole Rush: Version 1.0 is here!</title>
-    <link>https://ripworx.dev/potholerush/</link>
+    <link>https://ripworx.dev/potholerush/c64/</link>
     <guid isPermaLink="false">2026-10-19-pr-version10ishere</guid>
     <pubDate>Mon, 19 Oct 2026 12:00:00 -0300</pubDate>
     <description>One program for PAL, NTSC and Drean machines, your car in the color you choose, and a manual with a few words from Sebas and Carlos.</description>
@@ -51,7 +58,7 @@
   </item>
   <item>
     <title>Pothole Rush: Now on cartridge, too.</title>
-    <link>https://ripworx.dev/potholerush/#descargar</link>
+    <link>https://ripworx.dev/potholerush/c64/#descargar</link>
     <guid isPermaLink="false">2026-10-19-pr-nowoncartridgetoo</guid>
     <pubDate>Mon, 19 Oct 2026 12:00:00 -0300</pubDate>
     <description>The EasyFlash cartridge starts by itself at power-on and saves your progress on the cartridge, no disk drive needed.</description>

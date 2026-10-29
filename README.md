@@ -4,8 +4,8 @@ El sitio de RIPworx: juegos para computadoras retro, hechos en Asunción, Paragu
 GitHub Pages en <https://ripworx.dev/> (dominio propio, registrado en Porkbun; la dirección
 vieja, `czayas.github.io/ripworx/`, lleva ahí).
 
-Tiene dos juegos para Commodore 64: **Pothole Rush** (versión 1.0, PAL, NTSC y Drean, en disco y en cartucho EasyFlash) y
-**Jumping Jim** (versión 1.1.1, PAL, NTSC y Drean; port del juego de roman126 para la ZX
+Tiene dos juegos: **Pothole Rush** para Commodore 64 (versión 1.0.2, PAL, NTSC y Drean, en disco y
+en cartucho EasyFlash) y para MEGA65 (versión 1.0.0), y **Jumping Jim** para Commodore 64 (versión 1.1.1, PAL, NTSC y Drean; port del juego de roman126 para la ZX
 Spectrum Next, con su permiso).
 
 ## Qué hay
@@ -13,8 +13,10 @@ Spectrum Next, con su permiso).
 | Ruta | Qué es |
 |---|---|
 | `index.html` | El inicio de RIPworx, con la lista de juegos. |
-| `potholerush/index.html` | La página de Pothole Rush. |
-| `potholerush/img/` | Capturas de la C64, el video de una partida, los sprites y la tapa. |
+| `potholerush/index.html` | La página de Pothole Rush: la presentación y una tarjeta por máquina (`#descargar`, para que los enlaces viejos sigan andando). Cada port tiene su página propia, con sus capturas (pedido de Carlos, 28/10/2026). |
+| `potholerush/img/` | Lo común a todas las máquinas: la tapa, el SEGUI y las fotos de Sebas y Carlos. |
+| `potholerush/c64/` | La página de la Commodore 64 y, en `img/`, sus capturas, el video, los sprites. |
+| `potholerush/mega65/` | La página de la MEGA65 (con "¿Qué paquete elijo?": qué hace cada paquete, dónde guarda el avance y cómo no dejar rastros) y, en `img/`, sus capturas, el video y los dibujos: los arma `tools/sitio/imagenes_mega65.py` del repositorio del juego (rama `port-mega65`). |
 | `jumpingjim/index.html` | La página de Jumping Jim. |
 | `jumpingjim/img/` | La ilustración de Carlos para la portada (`portada.webp`, `portada-og.jpg`), los ocho niveles, el título, los récords y el video. El logo arcoíris (`logo.png`) y el cielo del nivel 1 (`fondo.png`) quedan guardados, sin usar por ahora. |
 | `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
@@ -30,6 +32,12 @@ Los textos están en los dos idiomas en el mismo HTML: cada uno va con `lang="es
 y el CSS muestra solo el elegido.
 
 ## Cómo se actualiza
+
+MEGA65: las descargas salen de la rama `lanzamientos` del repositorio del juego con
+`tools/sitio/descargas_mega65.sh ../ripworx VERSION` (rama `main`), y las imágenes y el video con
+`python3 tools/sitio/imagenes_mega65.py ../ripworx` (rama `port-mega65`).
+
+Commodore 64:
 
 El zip, las capturas y el video se arman desde el repositorio del juego (`czayas/potholerush`), en
 la rama `manual` (que trae la rama del juego, `port-etapa6-c64`, con un merge); de ahí salen el

@@ -1,0 +1,27 @@
+Código fuente de los programas de los paquetes de Pothole Rush 1.0.0 para MEGA65 (Windows y Linux)
+Source code of the programs in the Pothole Rush 1.0.0 for MEGA65 packages (Windows and Linux)
+
+Copias del código fuente, tal como se usó / Copies of the source code, as used:
+  Xemu (GPL 2.0), con los archivos del proyecto MEGA65 (GPL) y sus Open ROMs (LGPL 3.0) /
+  with files of the MEGA65 project (GPL) and its Open ROMs (LGPL 3.0):
+    https://ripworx.dev/descargas/fuentes/xemu-40dfef0-source.tar.gz
+    En Windows, con un cambio / On Windows, with a change:
+    https://ripworx.dev/descargas/fuentes/xemu-sin-consola.patch
+    (sin la consola de Windows al arrancar; no toca la emulación /
+     no Windows console at start; emulation untouched)
+  libfuse 3.15.0 (LGPL 2.1), en el AppImage / in the AppImage:
+    https://ripworx.dev/descargas/fuentes/libfuse-3.15.0-source.tar.gz
+  AppImage type2-runtime (MIT), en el AppImage / in the AppImage:
+    https://ripworx.dev/descargas/fuentes/appimage-type2-runtime-fedfad5-source.tar.gz
+
+Origen de cada uno / Where each one comes from:
+  Xemu:                      https://github.com/lgblgblgb/xemu.git  commit 40dfef0d1d5f56be2469492715c12bdb32c75b67
+  libfuse 3.15.0:            https://github.com/libfuse/libfuse.git  commit 6d08472ea47db895748d5ca7d3daf032c3fefcf8
+  AppImage type2-runtime:    https://github.com/AppImage/type2-runtime.git  commit fedfad51acc2860b2916a1eef32ba4a500ff31ef
+  squashfuse 0.5.2 (BSD):    https://github.com/vasi/squashfuse.git  commit 775b4cc72ab47641637897f11ce0da15d5c1f115
+  SDL 2.32.10 (zlib):        https://github.com/libsdl-org/SDL.git  commit 5d249570393f7a37e037abf22cd6012a4cc56a71
+  font8x8 (dominio público / public domain), la letra de la pantalla inicial / the welcome screen font:
+                             https://github.com/dhepper/font8x8
+
+Las licencias completas vienen en la carpeta "licencias" de cada paquete.
+The full license texts are in the "licencias" folder of each package.
