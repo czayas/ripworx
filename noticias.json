@@ -1,6 +1,9 @@
 {
   "_LEEME": "Las novedades del sitio, de la más nueva a la más vieja. Después de cambiar este archivo: python3 herramientas/noticias.py (escribe la sección del inicio, noticias/index.html, noticias.xml y news.xml). producto: pr (Pothole Rush), jj (Jumping Jim) o rw (RIPworx). enlace: a dónde lleva la noticia, relativo a la raíz del sitio.",
   "noticias": [
+    {"fecha": "2026-11-10", "producto": "pr", "enlace": "potholerush/mega65/#aviso",
+     "es": {"titulo": "Pothole Rush en una MEGA65 real.", "texto": "En la máquina, la versión 1.0.0 muestra bien el título pero la pantalla del juego sale rota. En el emulador anda bien, y los paquetes de Windows y Linux no tienen este problema. Ya estamos preparando el arreglo: gracias a quienes lo probaron y nos avisaron."},
+     "en": {"titulo": "Pothole Rush on a real MEGA65.", "texto": "On the machine, version 1.0.0 shows the title screen fine, but the in-game screen comes out garbled. It works fine in the emulator, and the Windows and Linux packages are not affected. A fix is on the way: thanks to everyone who tested it and let us know."}},
     {"fecha": "2026-10-29", "producto": "pr", "enlace": "potholerush/mega65/",
      "es": {"titulo": "Pothole Rush llega a la MEGA65.", "texto": "Con cinco paisajes, la ruta que resbala en la nieve, sonido en estéreo y la radio del auto con once temas. Para la MEGA65, y para Windows y Linux con el emulador incluido."},
      "en": {"titulo": "Pothole Rush comes to the MEGA65.", "texto": "With five landscapes, an icy road in the snow, stereo sound and a car radio with eleven tracks. For the MEGA65, and for Windows and Linux with the emulator included."}},

@@ -229,3 +229,8 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
   .paquetes td:first-child { font-size: 1.05rem; }
   .paquetes .rotulo { display: block; font-weight: bold; color: var(--violeta); font-size: .85rem; }
 }
+
+/* un aviso a todo el ancho, arriba de la página (10/11/2026: la MEGA65 1.0.0 en la máquina real) */
+.anuncio { border: 5px solid var(--naranja); background: #fdf1e7; border-radius: 6px; padding: 10px 22px; margin: 34px 0 0; }
+.anuncio p { margin: 4px 0; max-width: none; }
+.zip .aviso { margin-top: 10px; color: var(--tinta); }
