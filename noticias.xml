@@ -6,10 +6,17 @@
   <atom:link href="https://ripworx.dev/noticias.xml" rel="self" type="application/rss+xml"/>
   <description>Juegos para computadoras retro, hechos en Asunción, Paraguay.</description>
   <language>es</language>
-  <lastBuildDate>Tue, 10 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Pothole Rush 1.0.3 para MEGA65: ahora en la máquina real.</title>
+    <link>https://ripworx.dev/potholerush/mega65/</link>
+    <guid isPermaLink="false">2026-11-16-pr-potholerush103formega65nowontherealmachi</guid>
+    <pubDate>Mon, 16 Nov 2026 12:00:00 -0300</pubDate>
+    <description>La nueva versión anda en una MEGA65 de verdad, y trae algunos arreglos: los menús centrados después de una partida, la tecla ← para abandonar, el tronco que choca solo con las ruedas y la moneda que vuela bien al marcador. Gracias a Tayger y Deft, que la probaron en sus máquinas: ya están en el salón de la fama.</description>
+  </item>
   <item>
     <title>Pothole Rush en una MEGA65 real.</title>
-    <link>https://ripworx.dev/potholerush/mega65/#aviso</link>
+    <link>https://ripworx.dev/potholerush/mega65/</link>
     <guid isPermaLink="false">2026-11-10-pr-potholerushonarealmega65</guid>
     <pubDate>Tue, 10 Nov 2026 12:00:00 -0300</pubDate>
     <description>En la máquina, la versión 1.0.0 muestra bien el título pero la pantalla del juego sale rota. En el emulador anda bien, y los paquetes de Windows y Linux no tienen este problema. Ya estamos preparando el arreglo: gracias a quienes lo probaron y nos avisaron.</description>

@@ -1,5 +1,5 @@
-Código fuente de los programas de los paquetes de Pothole Rush 1.0.0 para MEGA65 (Windows y Linux)
-Source code of the programs in the Pothole Rush 1.0.0 for MEGA65 packages (Windows and Linux)
+Código fuente de los programas de los paquetes de Pothole Rush 1.0.3 para MEGA65 (Windows y Linux)
+Source code of the programs in the Pothole Rush 1.0.3 for MEGA65 packages (Windows and Linux)
 
 Copias del código fuente, tal como se usó / Copies of the source code, as used:
   Xemu (GPL 2.0), con los archivos del proyecto MEGA65 (GPL) y sus Open ROMs (LGPL 3.0) /
