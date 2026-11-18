@@ -9,6 +9,8 @@
 @font-face { font-family: Adventor; font-weight: bold; src: url(fuentes/texgyreadventor-bold.woff2) format("woff2"); font-display: swap; }
 @font-face { font-family: Adventor; font-style: italic; src: url(fuentes/texgyreadventor-italic.woff2) format("woff2"); font-display: swap; }
 @font-face { font-family: Raleway; font-weight: 900; src: url(fuentes/raleway-black.woff2) format("woff2"); font-display: swap; }
+/* Raleway trae por omisión números "de texto" (el 3, 4, 5, 7 y 9 bajan de la línea): en los títulos, números alineados */
+.titulo-juego, .juego-titulo { font-variant-numeric: lining-nums; }
 
 :root {
   --caja: #470e52;          /* el fondo de la caja de Pothole Rush */
