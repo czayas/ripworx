@@ -63,7 +63,9 @@ main { max-width: 980px; margin: 0 auto; padding: 24px 16px 40px; }
 .recuadro { border: 5px solid var(--violeta); padding: 8px 26px 22px; margin: 52px 0 0; }
 .recuadro > h2 { display: table; margin: -1.05em auto 14px; padding: 0 12px; background: var(--papel);
                  color: var(--violeta); font-size: 1.45rem; line-height: 1.25; text-align: center; }
-.recuadro > p, .recuadro li { max-width: 68ch; }
+/* Estilo del sitio (Carlos, 20/11/2026): el texto de los recuadros usa todo el ancho, sin dejar un
+   margen en blanco a la derecha. La única excepción es .centrado, que es un bloque angosto a propósito. */
+.recuadro > p, .recuadro li { max-width: none; }
 .recuadro p { margin: 0 0 12px; }
 
 /* una pantalla de la C64 en un televisor de esquinas redondeadas */
@@ -118,7 +120,10 @@ footer p { margin: 4px auto; max-width: 70ch; opacity: .9; }
 .inicio { background: var(--caja); color: #fff; text-align: center; padding: 80px 16px 70px; position: relative; }
 .inicio .marca { width: min(360px, 70%); margin: 0 auto 18px; }
 .inicio p { font-size: 1.15rem; max-width: 46ch; margin: 0 auto; opacity: .95; }
-.juegos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 10px; }
+/* Las tarjetas de juegos y de máquinas, de a dos por fila; si la última fila queda con una sola,
+   va centrada (estilo del sitio, Carlos, 20/11/2026). En el celular, una por fila. */
+.juegos { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 10px; }
+.juegos > .juego { flex: 0 1 calc((100% - 30px) / 2); min-width: 0; }
 .juego { display: block; text-decoration: none; color: inherit; border: 5px solid var(--violeta); }
 .juego:hover .juego-titulo { text-decoration: underline; }
 .juego .tapa-mini { background: var(--caja); padding: 18px; }
@@ -132,6 +137,7 @@ footer p { margin: 4px auto; max-width: 70ch; opacity: .9; }
 @media (max-width: 760px) {
   html { font-size: 16px; }
   .portada-juego, .descarga, .dos { grid-template-columns: 1fr; }
+  .juegos > .juego { flex-basis: 100%; }
   .recuadro { padding: 6px 16px 18px; border-width: 4px; }
   .recuadro > h2 { font-size: 1.2rem; }
   .caja-tapa { padding-top: 60px; }
@@ -162,7 +168,6 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 
 /* La historia (Pothole Rush): las fotos de Sebas y Carlos, una al lado de la otra, y el texto a
    todo el ancho del recuadro (pedido de Carlos, 21/10/2026) */
-.recuadro.historia > p, .recuadro.historia li { max-width: none; }
 .historia .fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 6px 0 18px; }
 .historia .fotos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 @media (max-width: 480px) { .historia .fotos { gap: 10px; } }
@@ -181,14 +186,13 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 .sin-js { color: var(--violeta); }
 .panel .descarga { margin-top: 0; }
 .pestanas .corto { display: none; }
-.recuadro > .sumas { max-width: none; margin: 28px 0 0; font-size: .85rem; color: var(--tenue); }
+.recuadro > .sumas { margin: 28px 0 0; font-size: .85rem; color: var(--tenue); }
 @media (max-width: 760px) { .pestanas button { flex: 1; padding: 8px 4px 6px; font-size: .95rem; }
   .pestanas .largo { display: none; } .pestanas .corto { display: inline; } }
 .descarga .manual { margin: 12px 0 0; }
 
 /* ---------- novedades (las escribe herramientas/noticias.py desde noticias.json) ---------- */
 .noticias { list-style: none; margin: 4px 0 0; padding: 0; }
-.recuadro .noticia { max-width: none; }   /* a todo el ancho del recuadro (los li de .recuadro llevan 68ch) */
 .noticia { padding: 12px 0 12px 16px; border-left: 5px solid var(--color-producto, var(--violeta)); margin: 0 0 10px; }
 .noticia.pr { --color-producto: #5c1670; }
 .noticia.jj { --color-producto: #2f5a24; }
@@ -214,7 +218,7 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 /* ---------- Pothole Rush: la página de cada máquina (pedido de Carlos, 28/10/2026) ---------- */
 /* las tarjetas de las máquinas, con una pantalla del juego */
 .juego .tapa-mini img.pantalla-mini { image-rendering: pixelated; border-radius: 6px; background: #111; }
-.recuadro > .nota { max-width: none; margin: 18px 0 0; color: var(--tenue); }
+.recuadro > .nota { margin: 18px 0 0; color: var(--tenue); }
 /* ¿Qué paquete elijo?: una tabla; en el celular, cada paquete es un bloque */
 .paquetes { width: 100%; border-collapse: collapse; margin: 8px 0 0; font-size: .93rem; line-height: 1.5; }
 .paquetes th { text-align: left; font-weight: bold; color: var(--violeta); border-bottom: 2px solid var(--violeta); padding: 6px 10px; }
