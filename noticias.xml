@@ -6,7 +6,14 @@
   <atom:link href="https://ripworx.dev/noticias.xml" rel="self" type="application/rss+xml"/>
   <description>Juegos para computadoras retro, hechos en Asunción, Paraguay.</description>
   <language>es</language>
-  <lastBuildDate>Mon, 16 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Pothole Rush llega a la ZX Spectrum Next.</title>
+    <link>https://ripworx.dev/potholerush/next/</link>
+    <guid isPermaLink="false">2026-11-19-pr-potholerushcomestothezxspectrumnext</guid>
+    <pubDate>Thu, 19 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Con cinco paisajes, la ruta que resbala en la nieve, sonido en estéreo con tres chips AY y batería de muestras, y la radio del auto con once temas. Para la ZX Spectrum Next de 2 MB, y para Windows y Linux con el emulador incluido.</description>
+  </item>
   <item>
     <title>Pothole Rush 1.0.3 para MEGA65: ahora en la máquina real.</title>
     <link>https://ripworx.dev/potholerush/mega65/</link>

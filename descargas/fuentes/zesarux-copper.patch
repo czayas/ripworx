@@ -1,0 +1,21 @@
+diff --git a/src/machines/tbblue.c b/src/machines/tbblue.c
+index e7d9e16..5d36ff9 100644
+--- a/src/machines/tbblue.c
++++ b/src/machines/tbblue.c
+@@ -579,10 +579,13 @@ void tbblue_copper_run_opcodes(void)
+             //printf ("Wait condition positive at copper_pc %02XH scanline %d raster %d\n",tbblue_copper_pc,t_scanline,tbblue_get_current_raster_position() );
+             tbblue_copper_next_opcode();
+             //printf ("Wait condition positive, after incrementing copper_pc %02XH\n",tbblue_copper_pc);
++            delta_testados_copper -=1;
++        }
++        else {
++            //(Pothole Rush) la posicion del haz no cambia dentro de este bucle: si el WAIT no se
++            //cumple ahora, tampoco en los ciclos que quedan; se sale sin repetir la misma prueba
++            delta_testados_copper=0;
+         }
+-        //printf ("Waiting until scanline %d horiz %d\n",linea,horiz);
+-
+-        delta_testados_copper -=1;
+ 
+     }
+ 

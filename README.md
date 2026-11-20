@@ -5,7 +5,7 @@ GitHub Pages en <https://ripworx.dev/> (dominio propio, registrado en Porkbun; l
 vieja, `czayas.github.io/ripworx/`, lleva ahí).
 
 Tiene dos juegos: **Pothole Rush** para Commodore 64 (versión 1.0.2, PAL, NTSC y Drean, en disco y
-en cartucho EasyFlash) y para MEGA65 (versión 1.0.0), y **Jumping Jim** para Commodore 64 (versión 1.1.1, PAL, NTSC y Drean; port del juego de roman126 para la ZX
+en cartucho EasyFlash), para MEGA65 (versión 1.0.3) y para ZX Spectrum Next (versión 1.0.0), y **Jumping Jim** para Commodore 64 (versión 1.1.1, PAL, NTSC y Drean; port del juego de roman126 para la ZX
 Spectrum Next, con su permiso).
 
 ## Qué hay
@@ -17,6 +17,7 @@ Spectrum Next, con su permiso).
 | `potholerush/img/` | Lo común a todas las máquinas: la tapa, el SEGUI y las fotos de Sebas y Carlos. |
 | `potholerush/c64/` | La página de la Commodore 64 y, en `img/`, sus capturas, el video, los sprites. |
 | `potholerush/mega65/` | La página de la MEGA65 (con "¿Qué paquete elijo?": qué hace cada paquete, dónde guarda el avance y cómo no dejar rastros) y, en `img/`, sus capturas, el video y los dibujos: los arma `tools/sitio/imagenes_mega65.py` del repositorio del juego (rama `port-mega65`). |
+| `potholerush/next/` | La página de la ZX Spectrum Next, como la de la MEGA65, y en `img/` sus capturas, el video y los dibujos: los arma `tools/sitio/imagenes_next.py` del repositorio del juego (rama `port-next`). |
 | `jumpingjim/index.html` | La página de Jumping Jim. |
 | `jumpingjim/img/` | La ilustración de Carlos para la portada (`portada.webp`, `portada-og.jpg`), los ocho niveles, el título, los récords y el video. El logo arcoíris (`logo.png`) y el cielo del nivel 1 (`fondo.png`) quedan guardados, sin usar por ahora. |
 | `herramientas/jumpingjim-capturas.py` | Saca de VICE las capturas y el video de Jumping Jim. |
@@ -36,6 +37,9 @@ y el CSS muestra solo el elegido.
 MEGA65: las descargas salen de la rama `lanzamientos` del repositorio del juego con
 `tools/sitio/descargas_mega65.sh ../ripworx VERSION` (rama `main`), y las imágenes y el video con
 `python3 tools/sitio/imagenes_mega65.py ../ripworx` (rama `port-mega65`).
+
+ZX Spectrum Next: igual, con `tools/sitio/descargas_next.sh ../ripworx VERSION` (rama `main`) y
+`python3 tools/sitio/imagenes_next.py ../ripworx` (rama `port-next`).
 
 Commodore 64:
 

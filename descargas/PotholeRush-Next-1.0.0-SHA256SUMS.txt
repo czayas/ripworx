@@ -1,0 +1,8 @@
+ddc97ac0536b0acd979288ad8dec9fbbb4c932be65a3b0ee05eed5d68e6599a4  PotholeRush-Next-1.0.0-Manual-EN.pdf
+44add8a6d629d62474ac090bfdc41401a90c20dac7ab78f26314ff036fb55bba  PotholeRush-Next-1.0.0-Manual-ES.pdf
+b6593a412954c4a9a3f293c45065ca59eb573523946c927adc4971c85e9ed3bd  PotholeRush-Next-1.0.0.zip
+8ed4a8c803692cd2b0c768aeef0a3c26c3f68730fca51a103a129bb7227733d8  PotholeRush-Next-Linux-1.0.0-x86_64.AppImage
+15f0d21cc84ef6e4b29b4f0756774c9ea8662fa961beb468f6aabdc2a9bc8089  PotholeRush-Next-Windows-1.0.0-x64-portable.exe
+30a7b694764842932d850e8f33e26dba4f5a030cee849aed97e0659abdbbe414  PotholeRush-Next-Windows-1.0.0-x64-setup.exe
+f7192993adfcea136d238cbda00cfccfe72cb52485a6d19944176f461c79d798  PotholeRush-Next-Windows-1.0.0-x64.msi
+f37b664bfd602fb837af47d48f1ff08c25a3bdcce16d8ec02f9bf6a12459ed63  PotholeRush-Next-Windows-1.0.0-x64.zip

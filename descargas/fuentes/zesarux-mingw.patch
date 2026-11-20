@@ -1,0 +1,57 @@
+Cambios a ZEsarUX para compilarlo con MinGW-w64 desde Linux (kit de pilotos de prueba de
+Pothole Rush, tools/pilotos/armar_kit.sh). No cambian nada de la emulación:
+- utils.c: windows.h en lugar de winbase.h (con direct.h e io.h), y _mktemp + _mkdir en lugar de
+  mkdtemp, que mingw-w64 no trae.
+- zrcp/remote.c: S_NORMAL ya está definido por windows.h; se quita antes del enum.
+- zesarux.h: MAX_PATH por si falta, y PATH_MAX / NAME_MAX redefinidos sin aviso.
+
+--- a/src/utils.c
++++ b/src/utils.c
+@@ -49,7 +49,9 @@
+ 
+ #ifdef MINGW
+ //Para usar GetLogicalDrives
+-#include <winbase.h>
++#include <windows.h>
++#include <direct.h>
++#include <io.h>
+ #endif
+ 
+ 
+@@ -11383,7 +11385,9 @@
+         sprintf (template_dir,"%s\\zesarux-XXXXXX",windows_temp);
+ 
+         char *dir;
+-        dir=mkdtemp(template_dir);
++        /* mingw-w64 no trae mkdtemp: _mktemp + _mkdir (RIPworx, kit para pilotos de prueba) */
++        dir=_mktemp(template_dir);
++        if (dir!=NULL && _mkdir(dir)!=0) dir=NULL;
+ 
+                 if (dir==NULL) {
+                         debug_printf (VERBOSE_DEBUG,"Error getting temporary directory: %s",strerror(errno) );
+--- a/src/zrcp/remote.c
++++ b/src/zrcp/remote.c
+@@ -6532,6 +6532,9 @@
+ }
+ 
+ //CSI : Control Sequence Introducer
++#ifdef S_NORMAL
++#undef S_NORMAL
++#endif
+ enum enum_estados_char {
+     S_NORMAL, S_ESC, S_CSI
+ };
+--- a/src/zesarux.h
++++ b/src/zesarux.h
+@@ -41,6 +41,11 @@
+ //Para Windows
+ #ifdef MINGW
+ #include <stdlib.h>
++#ifndef MAX_PATH
++#define MAX_PATH 260
++#endif
++#undef PATH_MAX
++#undef NAME_MAX
+ #define PATH_MAX MAX_PATH
+ #define NAME_MAX MAX_PATH
+ #endif
