@@ -104,6 +104,13 @@ figcaption { font-style: italic; font-size: .9rem; color: var(--tenue); text-ali
 .autos td:first-child { width: 90px; }
 .autos img { height: 34px; width: auto; image-rendering: pixelated; }
 .autos .num { text-align: center; }
+/* en los celulares más angostos, la tabla del garaje más apretada para que no se salga (20/11/2026) */
+@media (max-width: 400px) {
+  .autos { font-size: .88rem; }
+  .autos th, .autos td { padding: 6px 2px; }
+  .autos td:first-child { width: auto; }
+  .autos img { height: 26px; }
+}
 
 /* descarga */
 .descarga { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 34px; }
@@ -237,7 +244,9 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 .paquetes small { display: block; color: var(--tenue); font-size: .82rem; }
 .paquetes code { font-family: inherit; font-weight: bold; white-space: nowrap; }
 .paquetes .rotulo { display: none; }
-@media (max-width: 760px) {
+/* la tabla de paquetes pasa al formato de bloques antes que el resto (hasta 900 px): con cinco
+   columnas y nombres de archivo que no se cortan, no entra entre 761 y 890 px (20/11/2026) */
+@media (max-width: 900px) {
   .paquetes thead { display: none; }
   .paquetes, .paquetes tbody, .paquetes tr, .paquetes td { display: block; width: auto !important; }
   .paquetes tr { border-bottom: 2px solid var(--violeta); padding: 8px 0; }
