@@ -78,13 +78,23 @@ figcaption { font-style: italic; font-size: .9rem; color: var(--tenue); text-ali
 .portada-juego .tele { max-width: 560px; }
 
 /* los objetos de la ruta, con sus sprites */
-.objetos { list-style: none; padding: 0; margin: 6px 0 0; display: grid;
-           grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px 28px; }
+/* Estilo del sitio (Carlos, 20/11/2026): en los grupos de recuadros (objetos, galerías, tarjetas),
+   si la última fila queda incompleta, va centrada. Tres por fila en la PC, dos en pantallas medianas
+   y uno en el celular. */
+.objetos { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-wrap: wrap;
+           justify-content: center; gap: 16px 28px; }
+.objetos > li { flex: 0 1 calc((100% - 56px) / 3); min-width: 0; }
 .objetos li { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: start; max-width: none; }
 .objetos img { width: 56px; height: 44px; object-fit: contain; image-rendering: pixelated; margin-top: 4px; }
 
 /* galería de pantallas */
-.galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; margin-top: 6px; }
+.galeria { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; margin-top: 6px; }
+.galeria > * { flex: 0 1 calc((100% - 44px) / 3); min-width: 0; }
+@media (max-width: 979px) {
+  .objetos > li { flex-basis: calc((100% - 28px) / 2); }
+  .galeria > * { flex-basis: calc((100% - 22px) / 2); }
+}
+@media (max-width: 619px) { .objetos > li, .galeria > * { flex-basis: 100%; } }
 .galeria .tele { padding: 10px; border-radius: 18px; }
 
 /* autos */
