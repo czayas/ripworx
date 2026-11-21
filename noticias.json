@@ -1,6 +1,9 @@
 {
   "_LEEME": "Las novedades del sitio, de la más nueva a la más vieja. Después de cambiar este archivo: python3 herramientas/noticias.py (escribe la sección del inicio, noticias/index.html, noticias.xml y news.xml). producto: pr (Pothole Rush), jj (Jumping Jim) o rw (RIPworx). enlace: a dónde lleva la noticia, relativo a la raíz del sitio.",
   "noticias": [
+    {"fecha": "2026-11-21", "producto": "pr", "enlace": "potholerush/c128/",
+     "es": {"titulo": "Pothole Rush llega a la Commodore 128.", "texto": "Con cinco paisajes, la ruta que resbala en la nieve y la radio del auto con once temas. Para máquinas PAL y NTSC, en disco."},
+     "en": {"titulo": "Pothole Rush comes to the Commodore 128.", "texto": "With five landscapes, an icy road in the snow and a car radio with eleven tracks. For PAL and NTSC machines, on disk."}},
     {"fecha": "2026-11-19", "producto": "pr", "enlace": "potholerush/next/",
      "es": {"titulo": "Pothole Rush llega a la ZX Spectrum Next.", "texto": "Con cinco paisajes, la ruta que resbala en la nieve, sonido en estéreo con tres chips AY y batería de muestras, y la radio del auto con once temas. Para la ZX Spectrum Next de 2 MB, y para Windows y Linux con el emulador incluido."},
      "en": {"titulo": "Pothole Rush comes to the ZX Spectrum Next.", "texto": "With five landscapes, an icy road in the snow, stereo sound on three AY chips with sampled drums, and a car radio with eleven tracks. For the 2 MB ZX Spectrum Next, and for Windows and Linux with the emulator included."}},

@@ -6,7 +6,14 @@
   <atom:link href="https://ripworx.dev/news.xml" rel="self" type="application/rss+xml"/>
   <description>Games for retro computers, made in Asunción, Paraguay.</description>
   <language>en</language>
-  <lastBuildDate>Thu, 19 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Pothole Rush comes to the Commodore 128.</title>
+    <link>https://ripworx.dev/potholerush/c128/</link>
+    <guid isPermaLink="false">2026-11-21-pr-potholerushcomestothecommodore128</guid>
+    <pubDate>Sat, 21 Nov 2026 12:00:00 -0300</pubDate>
+    <description>With five landscapes, an icy road in the snow and a car radio with eleven tracks. For PAL and NTSC machines, on disk.</description>
+  </item>
   <item>
     <title>Pothole Rush comes to the ZX Spectrum Next.</title>
     <link>https://ripworx.dev/potholerush/next/</link>
