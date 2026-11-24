@@ -1,0 +1,3 @@
+d0b0d8a22be1979c5a1ab8125073bfa6337d1c25dd5bb067d616f2c3894095f0  CreepinCrates-C128-1.0.0-Manual-EN.pdf
+c42e35949c2992e0e882bc9a42e78e360eb752e6b6ed1b26d8ff7cdeeb4fdd51  CreepinCrates-C128-1.0.0-Manual-ES.pdf
+39301a4a41b380b2330ecdc8dcd30e63aa8ed840dd542ca79d5d789f780fb935  CreepinCrates-C128-1.0.0.zip

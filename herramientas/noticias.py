@@ -16,6 +16,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITIO = 'https://ripworx.dev/'
 EN_INICIO = 5
 PRODUCTOS = {'pr': ('Pothole Rush', 'potholerush/'), 'jj': ('Jumping Jim', 'jumpingjim/'),
+             'cc': ("Creepin' Crates", 'creepincrates/'),
              'rw': ('RIPworx', '')}
 MESES_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 DIAS_RFC = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']

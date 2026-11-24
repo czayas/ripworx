@@ -259,3 +259,15 @@ body.inicio-pag { --caja: #15234d; --violeta: #15234d; }
 .anuncio { border: 5px solid var(--naranja); background: #fdf1e7; border-radius: 6px; padding: 10px 22px; margin: 34px 0 0; }
 .anuncio p { margin: 4px 0; max-width: none; }
 .zip .aviso { margin-top: 10px; color: var(--tinta); }
+
+/* ---------- Creepin' Crates (23/11/2026): la noche de la tapa, la madera de las cajas y el verde de las letras ---------- */
+body.cc { --caja: #0b0b0c; --violeta: #6e4220; }    /* el negro del fondo de la tapa; el marrón de las cajas */
+body.cc .boton.lleno { background: #9bd43a; color: #10210a; }   /* el verde de CREEPIN' */
+body.cc .boton.lleno:hover { background: #b0e05a; }
+body.cc .zip { background: #f5efe8; }
+body.cc .caja-tapa .ilustracion { width: min(720px, 100%); }
+body.cc .caja-tapa .subtitulo { margin-top: 18px; }
+.juego.cc { --caja: #0b0b0c; border-color: #6e4220; }
+.noticia.cc { --color-producto: #6e4220; }
+/* un título que no se ve (la ilustración ya lo trae) pero que leen los lectores de pantalla y los buscadores */
+.oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

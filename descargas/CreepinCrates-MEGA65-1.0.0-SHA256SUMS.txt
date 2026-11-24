@@ -1,0 +1,5 @@
+cde71771dcefecbd882f528807b812cfd35cb52f5e6652b52567004db9117da9  CreepinCrates-MEGA65-1.0.0-Manual-EN.pdf
+6fa6d3b1bf5d6ece22c95e736db8475d21af741f10f72e7eae9ae66184487274  CreepinCrates-MEGA65-1.0.0-Manual-ES.pdf
+23aa9b7b28ae8ce7c4dbe31149f8e4507b71526380a5f83e3929761896ff4b56  CreepinCrates-MEGA65-1.0.0.zip
+73b8719bd043e97b54da903bc197b04cf957367ec3870ac1c13fa1cfcf57eb57  CreepinCrates-MEGA65-Linux-1.0.0-x86_64.AppImage
+e7d9a74311bd11c7dab83b8da93348f36ab256de1adb98ac6578d58615404d25  CreepinCrates-MEGA65-Windows-1.0.0-x64-portable.exe
