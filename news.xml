@@ -6,12 +6,12 @@
   <atom:link href="https://ripworx.dev/news.xml" rel="self" type="application/rss+xml"/>
   <description>Games for retro computers, made in Asunción, Paraguay.</description>
   <language>en</language>
-  <lastBuildDate>Tue, 24 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 12:00:00 -0300</lastBuildDate>
   <item>
     <title>Creepin&#x27; Crates, our new game, is here.</title>
     <link>https://ripworx.dev/creepincrates/</link>
-    <guid isPermaLink="false">2026-11-24-cc-creepincratesournewgameishere</guid>
-    <pubDate>Tue, 24 Nov 2026 12:00:00 -0300</pubDate>
+    <guid isPermaLink="false">2026-11-23-cc-creepincratesournewgameishere</guid>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
     <description>Push crates, squash zombies and line up the steel crates to call down the lightning. For the Commodore 128 in 80 columns and for the MEGA65 in 256 colors, also for Windows and Linux with the emulator included. We haven&#x27;t seen it run right on the real machines yet: if you have one, help us test it.</description>
   </item>
   <item>
