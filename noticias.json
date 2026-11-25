@@ -1,6 +1,9 @@
 {
   "_LEEME": "Las novedades del sitio, de la más nueva a la más vieja. Después de cambiar este archivo: python3 herramientas/noticias.py (escribe la sección del inicio, noticias/index.html, noticias.xml y news.xml). producto: pr (Pothole Rush), jj (Jumping Jim), cc (Creepin' Crates) o rw (RIPworx). enlace: a dónde lleva la noticia, relativo a la raíz del sitio.",
   "noticias": [
+    {"fecha": "2026-11-25", "producto": "cc", "enlace": "creepincrates/mega65/",
+     "es": {"titulo": "Creepin' Crates ya anda en una MEGA65 real.", "texto": "Tayger lo probó en su máquina y anduvo de primera: el joystick, el teclado y la música, sin ningún problema. ¡Gracias, Tayger! Si lo juegas en la tuya, cuéntanos cómo te va."},
+     "en": {"titulo": "Creepin' Crates now runs on a real MEGA65.", "texto": "Tayger tried it on his machine and it worked like a charm: joystick, keyboard and music, no issues at all. Thanks, Tayger! If you play it on yours, let us know how it goes."}},
     {"fecha": "2026-11-23", "producto": "cc", "enlace": "creepincrates/",
      "es": {"titulo": "Llega Creepin' Crates, nuestro juego nuevo.", "texto": "Empuja cajas, aplasta zombis y pon en fila las cajas de acero para que caiga el rayo. Para la Commodore 128 en 80 columnas y para la MEGA65 en 256 colores, también para Windows y Linux con el emulador incluido. Todavía no lo vimos andar bien en las máquinas reales: si tienes una, ayúdanos a probarlo."},
      "en": {"titulo": "Creepin' Crates, our new game, is here.", "texto": "Push crates, squash zombies and line up the steel crates to call down the lightning. For the Commodore 128 in 80 columns and for the MEGA65 in 256 colors, also for Windows and Linux with the emulator included. We haven't seen it run right on the real machines yet: if you have one, help us test it."}},

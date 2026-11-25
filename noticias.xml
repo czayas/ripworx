@@ -6,7 +6,14 @@
   <atom:link href="https://ripworx.dev/noticias.xml" rel="self" type="application/rss+xml"/>
   <description>Juegos para computadoras retro, hechos en Asunción, Paraguay.</description>
   <language>es</language>
-  <lastBuildDate>Mon, 23 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Creepin&#x27; Crates ya anda en una MEGA65 real.</title>
+    <link>https://ripworx.dev/creepincrates/mega65/</link>
+    <guid isPermaLink="false">2026-11-25-cc-creepincratesnowrunsonarealmega65</guid>
+    <pubDate>Wed, 25 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Tayger lo probó en su máquina y anduvo de primera: el joystick, el teclado y la música, sin ningún problema. ¡Gracias, Tayger! Si lo juegas en la tuya, cuéntanos cómo te va.</description>
+  </item>
   <item>
     <title>Creepin&#x27; Crates: Llega Creepin&#x27; Crates, nuestro juego nuevo.</title>
     <link>https://ripworx.dev/creepincrates/</link>
