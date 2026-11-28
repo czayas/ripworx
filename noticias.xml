@@ -6,7 +6,14 @@
   <atom:link href="https://ripworx.dev/noticias.xml" rel="self" type="application/rss+xml"/>
   <description>Juegos para computadoras retro, hechos en Asunción, Paraguay.</description>
   <language>es</language>
-  <lastBuildDate>Wed, 25 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Creepin&#x27; Crates llega a la ZX Spectrum Next.</title>
+    <link>https://ripworx.dev/creepincrates/next/</link>
+    <guid isPermaLink="false">2026-11-27-cc-creepincratescomestothezxspectrumnext</guid>
+    <pubDate>Fri, 27 Nov 2026 12:00:00 -0300</pubDate>
+    <description>El mismo depósito de la MEGA65, sin recortar nada: cientos de colores, personajes que se mueven punto por punto, música en estéreo con tres chips AY, las cuatro escenas bajo la luna y el salón de la fama guardado en la tarjeta. Para la ZX Spectrum Next y sus compatibles, y para Windows y Linux con el emulador incluido.</description>
+  </item>
   <item>
     <title>Creepin&#x27; Crates ya anda en una MEGA65 real.</title>
     <link>https://ripworx.dev/creepincrates/mega65/</link>

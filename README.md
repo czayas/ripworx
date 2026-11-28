@@ -5,7 +5,7 @@ GitHub Pages en <https://ripworx.dev/> (dominio propio, registrado en Porkbun; l
 vieja, `czayas.github.io/ripworx/`, lleva ahí).
 
 Tiene dos juegos: **Pothole Rush** para Commodore 64 (versión 1.0.2, PAL, NTSC y Drean, en disco y
-en cartucho EasyFlash), para Commodore 128 (versión 1.0.0, PAL y NTSC, en disco), para MEGA65 (versión 1.0.3) y para ZX Spectrum Next (versión 1.0.0), y **Jumping Jim** para Commodore 64 (versión 1.1.1, PAL, NTSC y Drean; port del juego de roman126 para la ZX
+en cartucho EasyFlash), para Commodore 128 (versión 1.0.0, PAL y NTSC, en disco), para MEGA65 (versión 1.0.3) y para ZX Spectrum Next (versión 1.0.0), **Creepin' Crates** para Commodore 128, MEGA65 y ZX Spectrum Next (versión 1.0.0), y **Jumping Jim** para Commodore 64 (versión 1.1.1, PAL, NTSC y Drean; port del juego de roman126 para la ZX
 Spectrum Next, con su permiso).
 
 ## Qué hay

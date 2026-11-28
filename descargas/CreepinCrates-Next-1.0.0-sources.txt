@@ -1,0 +1,26 @@
+Código fuente de los programas de los paquetes de Creepin' Crates para ZX Spectrum Next (Windows y Linux)
+Source code of the programs in the Creepin' Crates for ZX Spectrum Next packages (Windows and Linux)
+
+Copias del código fuente, tal como se usó / Copies of the source code, as used:
+  ZEsarUX 13.1 (GPL 3.0):
+    https://ripworx.dev/descargas/fuentes/zesarux-dddda21-source.tar.gz
+    con los cambios de / with the changes in:
+    https://ripworx.dev/descargas/fuentes/zesarux-copper.patch (Windows y Linux; más rápido, la misma emulación /
+      faster, same emulation)
+    https://ripworx.dev/descargas/fuentes/zesarux-mingw.patch (Windows; para compilar con MinGW / to build with MinGW)
+  libfuse 3.15.0 (LGPL 2.1), en el AppImage / in the AppImage:
+    https://ripworx.dev/descargas/fuentes/libfuse-3.15.0-source.tar.gz
+  AppImage type2-runtime (MIT), en el AppImage / in the AppImage:
+    https://ripworx.dev/descargas/fuentes/appimage-type2-runtime-fedfad5-source.tar.gz
+
+Origen de cada uno / Where each one comes from:
+  ZEsarUX:                   https://github.com/chernandezba/zesarux.git  commit dddda219ba352801ce6327e47f0d6529450445ae
+  mingw-w64 winpthreads:     https://github.com/mingw-w64/mingw-w64.git  commit e4dcfb3b598971d49ca9152c1f287c32c1013fbf
+  libfuse 3.15.0:            https://github.com/libfuse/libfuse.git  commit 6d08472ea47db895748d5ca7d3daf032c3fefcf8
+  AppImage type2-runtime:    https://github.com/AppImage/type2-runtime.git  commit fedfad51acc2860b2916a1eef32ba4a500ff31ef
+  squashfuse 0.5.2 (BSD):    https://github.com/vasi/squashfuse.git  commit 775b4cc72ab47641637897f11ce0da15d5c1f115
+  SDL 2.32.10 (zlib):        https://github.com/libsdl-org/SDL.git  commit 5d249570393f7a37e037abf22cd6012a4cc56a71
+48.rom: no es la ROM del Spectrum; es una ROM vacía de RIPworx / not the Spectrum ROM, an empty one by RIPworx.
+
+Las licencias completas vienen en la carpeta "licencias" de cada paquete.
+The full license texts are in the "licencias" folder of each package.

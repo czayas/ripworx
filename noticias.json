@@ -1,6 +1,9 @@
 {
   "_LEEME": "Las novedades del sitio, de la más nueva a la más vieja. Después de cambiar este archivo: python3 herramientas/noticias.py (escribe la sección del inicio, noticias/index.html, noticias.xml y news.xml). producto: pr (Pothole Rush), jj (Jumping Jim), cc (Creepin' Crates) o rw (RIPworx). enlace: a dónde lleva la noticia, relativo a la raíz del sitio.",
   "noticias": [
+    {"fecha": "2026-11-27", "producto": "cc", "enlace": "creepincrates/next/",
+     "es": {"titulo": "Creepin' Crates llega a la ZX Spectrum Next.", "texto": "El mismo depósito de la MEGA65, sin recortar nada: cientos de colores, personajes que se mueven punto por punto, música en estéreo con tres chips AY, las cuatro escenas bajo la luna y el salón de la fama guardado en la tarjeta. Para la ZX Spectrum Next y sus compatibles, y para Windows y Linux con el emulador incluido."},
+     "en": {"titulo": "Creepin' Crates comes to the ZX Spectrum Next.", "texto": "The same crate yard as on the MEGA65, with nothing left out: hundreds of colors, characters that move pixel by pixel, stereo music on three AY chips, the four scenes under the moon and the Hall of Fame saved on the SD card. For the ZX Spectrum Next and compatibles, and for Windows and Linux with the emulator included."}},
     {"fecha": "2026-11-25", "producto": "cc", "enlace": "creepincrates/mega65/",
      "es": {"titulo": "Creepin' Crates ya anda en una MEGA65 real.", "texto": "Tayger lo probó en su máquina y anduvo de primera: el joystick, el teclado y la música, sin ningún problema. ¡Gracias, Tayger! Si lo juegas en la tuya, cuéntanos cómo te va."},
      "en": {"titulo": "Creepin' Crates now runs on a real MEGA65.", "texto": "Tayger tried it on his machine and it worked like a charm: joystick, keyboard and music, no issues at all. Thanks, Tayger! If you play it on yours, let us know how it goes."}},

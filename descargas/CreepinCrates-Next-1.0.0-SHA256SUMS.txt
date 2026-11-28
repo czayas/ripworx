@@ -1,0 +1,5 @@
+2abb3afa159906f1956faea193c3b6dbba464d290b0f76c739e8d75264db303a  CreepinCrates-Next-1.0.0.zip
+5f9f7c39b0ffc4155248fa09dd727aceead55a8c4bbe3931857b85e6ae4442b6  CreepinCrates-Next-Windows-1.0.0-x64-portable.exe
+6bc453b26f81e742dbc2245d348e3e88a654731d0198200685364e39245a8b65  CreepinCrates-Next-Linux-1.0.0-x86_64.AppImage
+d4ce931b9318099cf72905847688cafd33f50b855834711e18509742e541cc7b  CreepinCrates-Next-1.0.0-Manual-EN.pdf
+89feb4a944aa3229b397cad5ff6a13f922e3427f5a46c8e43986a79618840e3f  CreepinCrates-Next-1.0.0-Manual-ES.pdf
